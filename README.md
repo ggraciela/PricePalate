@@ -6,9 +6,11 @@ This browser based web application to ...
 
 ## 2. Names of Contributors
 List team members and/or short bio's here... 
-* ...
-* ...
-* ... Hi, my name is Graciela. This is my first time trying github for a group project
+
+* Hi, my name is Victor! I like keyboard noises.
+* Hi, my name is Daisy/I am excited to work on our project
+* Hi, my name is Graciela. This is my first time trying github for a group project
+
 	
 ## 3. Technologies and Resources Used
 List technologies (with version numbers), API's, icons, fonts, images, media or data sources, and other resources that were used.
