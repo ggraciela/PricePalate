@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header img {
   height: 50px;
   margin-left: 50px;
@@ -63,5 +64,19 @@ footer {
   bottom: 0;
   margin-bottom: 20px;
   margin-left: 20px;
+=======
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+>>>>>>> 618aae6c24534731937ae2dbba116a5160e7f222
 }
 
+#footertext{
+    font-family:Verdana, Tahoma, sans-serif;
+    font-size: 12px;
+}
