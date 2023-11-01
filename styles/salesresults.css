@@ -12,6 +12,24 @@ html, body {
     width: 100%;
     background-color: #39A36A;
 }
+#textprompt {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 24px;
+}
+.back {
+    margin: 1em;
+}
+#flyer {
+    display: flex;
+    position: relative;
+    background-color: #8F8F8F;
+    margin-top: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+}
 #searchbar {
     background-color: white;
     border-radius: 5px;
