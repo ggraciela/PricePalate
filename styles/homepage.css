@@ -21,6 +21,22 @@ html, body {
     background-color: #39A36A;
     text-align: center;
 }
+#searchbar {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+}
+input {
+    border-radius: 5px;
+    border-color: #8F8F8F;
+    width: 70%;
+}
+button {
+    border-radius: 5px;
+}
 #footer {
     display: flex;
     justify-content: space-around;
@@ -32,6 +48,11 @@ html, body {
     bottom: 0;
     width: 100%;
   }
+  .textprompt {
+    margin: 1em;
+    font-size: 30px;
+    text-align: center;
+}
 #footer a {
     float: left;
     display: block;
