@@ -32,6 +32,33 @@ button {
     border-radius: 5px;
     border-style: none;
 }
+#options {
+    margin: auto;
+    display: grid;
+    width: 80%;
+    height: 40%;
+    grid-template-areas:
+    "store1 store2"
+    "store3 store4";
+
+    gap: 1em;
+}
+#store1 {
+    grid-area: store1;
+    background-color: red;
+}
+#store2 {
+    grid-area: store2;
+    background-color: blue;
+}
+#store3 {
+    grid-area: store3;
+    background-color: green;
+}
+#store4 {
+    grid-area: store4;
+    background-color: orange;
+}
 #textprompt {
     margin: 1em;
     font-size: 30px;
