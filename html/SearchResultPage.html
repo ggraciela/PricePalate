@@ -7,7 +7,6 @@
   <title>Search Result Page</title>
 
   <!-- Google icon link & style -->
-  <!-- sort icon -->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <style>
@@ -19,43 +18,196 @@
         'opsz' 24
     }
   </style>
-
-  <!-- plus icon -->
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <style>
-    .material-symbols-outlined {
-      font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
   </style>
-
   <!-- link to css -->
   <link rel="stylesheet" href="../styles/SearchResult.css">
 </head>
 
+<header>
+  <div class="searchbar">
+    <form>
+      <input type="text" id="search" placeholder="Search..">
+    </form>
+    
+  </div>
+  <span class="material-symbols-outlined">
+      search
+    </span>
+</header>
+
+
+
 <body>
   <div class="container">
-    <div>Search results :</div>
-    <span class="material-symbols-outlined" id="sort">
-      sort
-    </span>
+    <div class="top">
 
-    <div class="res1">
-      <img src="https://dummyimage.com/100x80/000/fff" alt="picture 1">
-      <div id="store"></div>
-      <div id="item"></div>
-      <div id="detail"></div>
-      <div id="price"></div>
-      <span class="material-symbols-outlined" id="plus">
-        add_circle
-      </span>
+      <div class="text">Search results</div>
+      <div class="sort">
+        <span class="material-symbols-outlined">
+          sort
+        </span>
+      </div>
+    </div>
+
+    <div class="result1">
+      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
+
+
+
+
+      <div class="info">
+        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
+        </div>
+        <div class="item">Apple, Ambrosia</div>
+        <div class="detail">Fresh 206.67 g</div>
+        <div class="price">$ 0.91 / gram</div>
+      </div>
+
+
+      <div class="counter">
+        <span class="material-symbols-outlined" class="plus">
+          add_circle
+        </span>
+
+        <div class="qty">1</div>
+
+        <span class="material-symbols-outlined" class="minus">
+          do_not_disturb_on
+        </span>
+      </div>
+
+    </div>
+
+    <div class="result2">
+      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
+
+
+
+
+      <div class="info">
+        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
+        </div>
+        <div class="item">Apple, Ambrosia</div>
+        <div class="detail">Fresh 206.67 g</div>
+        <div class="price">$ 0.91 / gram</div>
+      </div>
+
+
+      <div class="counter">
+        <span class="material-symbols-outlined" class="plus">
+          add_circle
+        </span>
+
+        <div class="qty">1</div>
+
+        <span class="material-symbols-outlined" class="minus">
+          do_not_disturb_on
+        </span>
+      </div>
+
+    </div>
+
+    <div class="result3">
+      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
+
+
+
+
+      <div class="info">
+        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
+        </div>
+        <div class="item">Apple, Ambrosia</div>
+        <div class="detail">Fresh 206.67 g</div>
+        <div class="price">$ 0.91 / gram</div>
+      </div>
+
+
+      <div class="counter">
+        <span class="material-symbols-outlined" class="plus">
+          add_circle
+        </span>
+
+        <div class="qty">1</div>
+
+        <span class="material-symbols-outlined" class="minus">
+          do_not_disturb_on
+        </span>
+      </div>
+
+    </div>
+
+    <div class="result4">
+      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
+
+
+
+
+      <div class="info">
+        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
+        </div>
+        <div class="item">Apple, Ambrosia</div>
+        <div class="detail">Fresh 206.67 g</div>
+        <div class="price">$ 0.91 / gram</div>
+      </div>
+
+
+      <div class="counter">
+        <span class="material-symbols-outlined" class="plus">
+          add_circle
+        </span>
+
+        <div class="qty">1</div>
+
+        <span class="material-symbols-outlined" class="minus">
+          do_not_disturb_on
+        </span>
+      </div>
+
     </div>
 
   </div>
+
+
 </body>
+
+<footer>
+  <div class="home">
+    <span class="material-symbols-outlined">
+      home
+    </span>
+
+  </div>
+
+  <div class="search">
+    <span class="material-symbols-outlined">
+      search
+    </span>
+
+  </div>
+
+
+  <div class="list">
+    <span class="material-symbols-outlined">
+      playlist_add_check
+    </span>
+
+  </div>
+  
+  <div class="sale">
+    <span class="material-symbols-outlined">
+      shoppingmode
+    </span>
+
+  </div>
+
+  
+  <div class="texthome">HOME</div>
+  <div class="textsearch">SEARCH</div>
+
+  <div class="textlist">LIST</div>
+  <div class="textsale">SALE</div>
+</footer>
 
 </html>

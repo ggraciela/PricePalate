@@ -1,0 +1,246 @@
+/* to make placeholder text in the search bar disappear upon clicking the form */
+input:focus::placeholder {
+  color: transparent;
+}
+
+body {
+  display: grid;
+  width: 90vw;
+  object-fit: contain;
+
+}
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.top {
+  display: flex;
+  grid-area: top;
+  margin-top: 20px;
+}
+
+.sort {
+  grid-area: sort;
+padding-left: 170px;
+}
+
+.container {
+  /* grid-template-columns: 80% 10%; */
+  width: 90vw;
+  margin: auto;
+
+
+}
+
+
+
+header {
+  background-color: #39A36A ;
+  /* width: 100%; */
+  /* justify-items: center; */
+  /* align-items: center; */
+  display: flex;
+}
+
+.searchbar{
+  margin: auto;
+  justify-self: center;
+  height: 70px;
+  width: 100%;
+  align-items: center;
+}
+
+form, #search {
+  width: 94%;
+  padding-left: 15px;
+  padding-top: 17px;
+  align-items: center;
+  border-width: 0px;
+}
+
+
+input::placeholder {
+  transform: translateY(-7px);
+  font-size: 15px;
+
+}
+
+header .material-symbols-outlined {
+  background-color: white;
+  height: 28px;
+  /* margin-top: px; */
+  margin-right: 25px;
+  align-self: center;
+  padding-top: 7px;
+}
+
+
+
+.allresults {
+  grid-area: allresults;
+  grid-template-columns: 90%;
+  grid-template-rows: 25% 25% 25% 25%;
+
+  grid-template-areas: 
+  "result1"
+  "result2"
+  "result3"
+  "result4";
+
+}
+
+
+.result1, .result2, .result3, .result4 {
+  grid-area: result; 
+  display: flex;
+  /* grid-template-columns: 40% 50% 10%;
+  grid-template-rows: 100%; */
+  object-fit: contain;
+  height: 100px;
+
+  margin-bottom: 6%;
+
+  border-color: black;
+  border-width: 1px;
+
+  /* grid-template-areas:
+  "image info counter"; */
+
+}
+
+.result1 {
+  padding-top: 5%;
+}
+
+.info {
+  display: grid;
+  grid-template-rows: 40% 20% 20% 20%;
+
+  grid-template-areas:
+  "store"
+  "item"
+  "detail"
+  "price"
+}
+
+.counter {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 30% 40% 30%;
+
+  padding-left: 3%;
+  padding-right: 3%;
+  grid-template-areas:
+  "plus" 
+  "qty"
+  "minus";
+}
+
+.text {
+  grid-area: text;
+}
+
+
+.image {
+ grid-area: image;
+ object-fit: cover;
+ padding-right: 3%;
+ padding-left: 3%;
+ 
+}
+
+.info {
+  grid-area: info;
+}
+
+.store {
+  grid-area: store;
+  object-fit: cover;
+
+}
+
+.storelogo {
+  height: 30px;
+  padding-bottom: 2%;
+}
+
+.item {
+  grid-area: item;
+}
+
+.detail {
+  grid-area: detail;
+}
+
+.price {
+  grid-area: price;
+}
+
+.counter {
+  grid-area: counter;
+}
+
+.plus {
+  grid-area: plus;
+}
+
+.qty {
+  grid-area: qty;
+}
+
+.minus {
+  grid-area: minus;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80% 20%;
+  align-items: center;
+  justify-items: center;
+}
+
+
+.counter .material-symbols-outlined {
+  font-size: 30px;
+  color: ;
+}
+
+footer .material-symbols-outlined {
+  font-size: 40px;
+  color: #8F8F8F;
+}
+
+.list .material-symbols-outlined {
+  font-size: 45px;
+}
+
+
+.sale .material-symbols-outlined {
+  font-size: 35px;
+}
+
+.search .material-symbols-outlined {
+  color: #39A36A;
+}
+
+.texthome, .textlist, .textsale {
+  color: #8F8F8F;
+  font-weight: bold;
+}
+
+.textsearch {
+  color: #39A36A;
+  font-weight: bold;
+}
+
+footer {
+  border-style: solid;
+  border-color: #8F8F8F;
+  border-width: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
