@@ -13,48 +13,54 @@
 </head>
 
 <body>
+  <header class="top">
+      <form id="searchbar">
+        <input id="insidebox" type="text" placeholder="Search" required>
+        <button type="submit"><span class="material-symbols-outlined">search</span></button>
+      </form>
+  </header>
 
-<div class="container">
-  <div id="header">
-    <form>
-      <input type="text" placeholder="Search" required>
-      <button type="submit">Subscribe Us</button>
-    </form>
-  </div>
+  <!--Placeholder for shopping list items, dynamic list from "Research page" requires JS-->
+  <section class="container">
 
-  <div id="shoppingList">
-    <ul>
-      <li class="list-group-item">item 1
-        <i class="fa fa-usd" aria-hidden="true"></i>
-        <input type="number" class="typeNumber" />
-        <i class="fa fa-trash" aria-hidden="true"></i>
-      </li>
-      <li class="list-group-item">item 2
-        <i class="fa fa-usd" aria-hidden="true"></i>
-        <input type="number" class="typeNumber" />
-        <i class="fa fa-trash" aria-hidden="true"></i>
-      </li>
-      <li class="list-group-item">item 3
-        <i class="fa fa-usd" aria-hidden="true"></i>
-        <input type="number" class="typeNumber" />
-        <i class="fa fa-trash" aria-hidden="true"></i>
-      </li>
-      <li class="list-group-item">item 4
-        <i class="fa fa-usd" aria-hidden="true"></i>
-        <input type="number" class="typeNumber" />
-        <i class="fa fa-trash" aria-hidden="true"></i>
-      </li>
-      <li class="list-group-item">item 5
-        <i class="fa fa-usd" aria-hidden="true"></i>
-        <input type="number" class="typeNumber" />
-        <i class="fa fa-trash" aria-hidden="true"></i>
-      </li>
-    </ul>
-  </div>
+    <div id="heading">
+      <h3>Shopping List</h3>
+    </div>
 
-  <div id="save">
-    <button type="button" class="btn btn-primary custom-button">Save Shopping List</button>
-  </div>
+    <div id="items">
+      <ul>
+        <li class="list-group-item">item 1
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <input type="number" class="typeNumber" />
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </li>
+        <li class="list-group-item">item 2
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <input type="number" class="typeNumber" />
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </li>
+        <li class="list-group-item">item 3
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <input type="number" class="typeNumber" />
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </li>
+        <li class="list-group-item">item 4
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <input type="number" class="typeNumber" />
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </li>
+        <li class="list-group-item">item 5
+          <i class="fa fa-usd" aria-hidden="true"></i>
+          <input type="number" class="typeNumber" />
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </div>
+
+    <div id="savebox">
+      <button type="button" class="btn btn-primary custom-button">Save Shopping List</button>
+    </div>
+  </section>
 
   <footer id="footer">
     <a href="#home">
@@ -72,6 +78,6 @@
     <a href="#account">
       <span class="material-symbols-outlined">person</span>
         <div>ACCOUNT</div>
-</div>
+
 </body>
 </html>
