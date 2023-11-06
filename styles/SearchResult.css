@@ -1,35 +1,49 @@
-/* to make placeholder text in the search bar disappear upon clicking the form */
-input:focus::placeholder {
-  color: transparent;
-}
-
-body {
-  display: grid;
-  width: 90vw;
-  object-fit: contain;
-
-}
-
 * {
   font-family: 'Quicksand', sans-serif;
 }
 
+
+
 .top {
-  display: flex;
+  display: grid;
   grid-area: top;
   margin-top: 20px;
+
+  grid-template-columns: 90vw 10vw;
+  grid-template-areas: 
+  "text sort";
 }
+
+.text {
+  grid-area: text;
+  align-self: right;
+}
+
 
 .sort {
   grid-area: sort;
-padding-left: 170px;
+}
+
+
+
+
+body {
+  display: grid;
+  /* width: 90vw; */
+  object-fit: contain;
+
 }
 
 .container {
   /* grid-template-columns: 80% 10%; */
-  width: 90vw;
-  margin: auto;
+  /* width: 90vw; */
+  /* margin: auto; */
+  padding-right: 3%;
+  padding-left: 3%;
 
+  grid-template-areas: 
+  "top"
+  "results";
 
 }
 
@@ -37,42 +51,71 @@ padding-left: 170px;
 
 header {
   background-color: #39A36A ;
-  /* width: 100%; */
+  width: 100%;
   /* justify-items: center; */
   /* align-items: center; */
-  display: flex;
+  display: grid;
+
+  object-fit: contain;
+  grid-template-columns: 85% 15%;
+  grid-template-areas: 
+  "searchbar magnifying";
 }
+
 
 .searchbar{
   margin: auto;
-  justify-self: center;
-  height: 70px;
+  /* justify-self: center; */
+  height: 75px;
   width: 100%;
-  align-items: center;
+  /* align-items: center; */
+  grid-area: searchbar;
+
+  /* display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "input"; */
 }
 
-form, #search {
-  width: 94%;
-  padding-left: 15px;
-  padding-top: 17px;
-  align-items: center;
+input {
+  width: 100%;
+  margin-left: 3%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-width: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-area: input;
+}
+
+/* vertically center placeholder text */
+input::placeholder {
+  /* transform: translateY(-7px);
+  font-size: 15px; */
+}
+
+/* to make placeholder text in the search bar disappear upon clicking the form */
+input:focus::placeholder {
+  color: transparent;
 }
 
 
-input::placeholder {
-  transform: translateY(-7px);
-  font-size: 15px;
-
+.magnifying {
+  grid-area: magnifying;
 }
 
 header .material-symbols-outlined {
   background-color: white;
-  height: 28px;
-  /* margin-top: px; */
-  margin-right: 25px;
-  align-self: center;
-  padding-top: 7px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
+  height: fit-content;
+  width: fit-content;
+  /* padding-top: 15px; */
 }
 
 
@@ -128,19 +171,16 @@ header .material-symbols-outlined {
   display: grid;
   align-items: center;
   justify-items: center;
-  grid-template-rows: 30% 40% 30%;
+  grid-template-rows: 50% 50% ;
 
   padding-left: 3%;
   padding-right: 3%;
   grid-template-areas:
   "plus" 
-  "qty"
   "minus";
 }
 
-.text {
-  grid-area: text;
-}
+
 
 
 .image {
@@ -204,7 +244,12 @@ footer {
 
 
 .counter .material-symbols-outlined {
-  font-size: 30px;
+  font-size: 35px;
+  color: ;
+}
+
+.bookmark .material-symbols-outlined {
+  font-size: 45px;
   color: ;
 }
 

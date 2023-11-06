@@ -21,8 +21,25 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
   </style>
+
+
   <!-- link to css -->
   <link rel="stylesheet" href="../styles/SearchResult.css">
+
+  <!-- FIREBASE 8 CDNs -->
+  <!-- Firestore for database -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+  <script src="/scripts/firebaseAPI_BBY31.js"></script>
+  <script src="/scripts/searchresult.js"></script>
+  <!-- <script src="/scripts/mockitems.js"></script> -->
+
+
+
 </head>
 
 <header>
@@ -30,11 +47,11 @@
     <form>
       <input type="text" id="search" placeholder="Search..">
     </form>
-    
-  </div>
+
+  </div class="magnifying">
   <span class="material-symbols-outlined">
-      search
-    </span>
+    search
+  </span>
 </header>
 
 
@@ -60,7 +77,7 @@
       <div class="info">
         <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
         </div>
-        <div class="item">Apple, Ambrosia</div>
+        <div class="item"><span id="itemname"></span></div>
         <div class="detail">Fresh 206.67 g</div>
         <div class="price">$ 0.91 / gram</div>
       </div>
@@ -71,11 +88,9 @@
           add_circle
         </span>
 
-        <div class="qty">1</div>
-
-        <span class="material-symbols-outlined" class="minus">
-          do_not_disturb_on
-        </span>
+        <div class="bookmark"><span class="material-symbols-outlined">
+            bookmark
+          </span></div>
       </div>
 
     </div>
@@ -100,11 +115,11 @@
           add_circle
         </span>
 
-        <div class="qty">1</div>
-
-        <span class="material-symbols-outlined" class="minus">
-          do_not_disturb_on
-        </span>
+        <div class="bookmark">
+          <span class="material-symbols-outlined">
+            bookmark
+          </span>
+        </div>
       </div>
 
     </div>
@@ -129,11 +144,9 @@
           add_circle
         </span>
 
-        <div class="qty">1</div>
-
-        <span class="material-symbols-outlined" class="minus">
-          do_not_disturb_on
-        </span>
+        <div class="bookmark"><span class="material-symbols-outlined">
+            bookmark
+          </span></div>
       </div>
 
     </div>
@@ -158,11 +171,9 @@
           add_circle
         </span>
 
-        <div class="qty">1</div>
-
-        <span class="material-symbols-outlined" class="minus">
-          do_not_disturb_on
-        </span>
+        <div class="bookmark"><span class="material-symbols-outlined">
+            bookmark
+          </span></div>
       </div>
 
     </div>
@@ -194,7 +205,7 @@
     </span>
 
   </div>
-  
+
   <div class="sale">
     <span class="material-symbols-outlined">
       shoppingmode
@@ -202,7 +213,7 @@
 
   </div>
 
-  
+
   <div class="texthome">HOME</div>
   <div class="textsearch">SEARCH</div>
 
