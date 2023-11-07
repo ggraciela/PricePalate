@@ -9,9 +9,9 @@
   grid-area: top;
   margin-top: 20px;
 
-  grid-template-columns: 90vw 10vw;
-  grid-template-areas: 
-  "text sort";
+  grid-template-columns: 90% 10%;
+  grid-template-areas:
+    "text sort";
 }
 
 .text {
@@ -41,16 +41,16 @@ body {
   padding-right: 3%;
   padding-left: 3%;
 
-  grid-template-areas: 
-  "top"
-  "results";
+  grid-template-areas:
+    "top"
+    "allresults";
 
 }
 
 
 
 header {
-  background-color: #39A36A ;
+  background-color: #39A36A;
   width: 100%;
   /* justify-items: center; */
   /* align-items: center; */
@@ -58,12 +58,12 @@ header {
 
   object-fit: contain;
   grid-template-columns: 85% 15%;
-  grid-template-areas: 
-  "searchbar magnifying";
+  grid-template-areas:
+    "searchbar magnifying";
 }
 
 
-.searchbar{
+.searchbar {
   margin: auto;
   /* justify-self: center; */
   height: 75px;
@@ -78,7 +78,7 @@ header {
 }
 
 input {
-  width: 100%;
+  width: 97%;
   margin-left: 3%;
   margin-top: 20px;
   padding-top: 10px;
@@ -90,10 +90,10 @@ input {
 }
 
 /* vertically center placeholder text */
-input::placeholder {
-  /* transform: translateY(-7px);
-  font-size: 15px; */
-}
+/* input::placeholder {
+  transform: translateY(-7px);
+  font-size: 15px;
+} */
 
 /* to make placeholder text in the search bar disappear upon clicking the form */
 input:focus::placeholder {
@@ -122,38 +122,27 @@ header .material-symbols-outlined {
 
 .allresults {
   grid-area: allresults;
-  grid-template-columns: 90%;
-  grid-template-rows: 25% 25% 25% 25%;
-
-  grid-template-areas: 
-  "result1"
-  "result2"
-  "result3"
-  "result4";
-
+  grid-template-columns: 80vw;
+  grid-auto-rows: 25%;
 }
 
 
-.result1, .result2, .result3, .result4 {
-  grid-area: result; 
-  display: flex;
-  /* grid-template-columns: 40% 50% 10%;
-  grid-template-rows: 100%; */
+.result {
+  grid-area: result;
+  display: grid;
+  grid-template-columns: 150px 150px 50px;
+  column-gap: 10px;
+  /* grid-template-rows: 50%; */
   object-fit: contain;
-  height: 100px;
+  justify-content: center;
 
-  margin-bottom: 6%;
 
   border-color: black;
   border-width: 1px;
 
-  /* grid-template-areas:
-  "image info counter"; */
+  grid-template-areas:
+    "image info counter";
 
-}
-
-.result1 {
-  padding-top: 5%;
 }
 
 .info {
@@ -161,34 +150,38 @@ header .material-symbols-outlined {
   grid-template-rows: 40% 20% 20% 20%;
 
   grid-template-areas:
-  "store"
-  "item"
-  "detail"
-  "price"
+    "store"
+    "item"
+    "detail"
+    "price"
 }
 
 .counter {
   display: grid;
-  align-items: center;
+  /* align-items: center; */
   justify-items: center;
-  grid-template-rows: 50% 50% ;
+  grid-template-rows: 50% 50%;
 
   padding-left: 3%;
   padding-right: 3%;
   grid-template-areas:
-  "plus" 
-  "minus";
+    "plus"
+    "bookmark";
+}
+
+.bookmark {
+  align-self: flex-end;
 }
 
 
-
-
 .image {
- grid-area: image;
- object-fit: cover;
- padding-right: 3%;
- padding-left: 3%;
- 
+  grid-area: image;
+  /* height: 100%; */
+  width: 100%;
+  object-fit: contain;
+  padding-right: 3%;
+  padding-left: 3%;
+
 }
 
 .info {
@@ -240,17 +233,22 @@ footer {
   grid-template-rows: 80% 20%;
   align-items: center;
   justify-items: center;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 
 .counter .material-symbols-outlined {
   font-size: 35px;
-  color: ;
+  /* color: ; */
 }
 
 .bookmark .material-symbols-outlined {
   font-size: 45px;
-  color: ;
+  /* color: ; */
 }
 
 footer .material-symbols-outlined {
@@ -271,7 +269,9 @@ footer .material-symbols-outlined {
   color: #39A36A;
 }
 
-.texthome, .textlist, .textsale {
+.texthome,
+.textlist,
+.textsale {
   color: #8F8F8F;
   font-weight: bold;
 }

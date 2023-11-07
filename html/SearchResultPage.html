@@ -30,13 +30,13 @@
   <!-- Firestore for database -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 
   <script src="/scripts/firebaseAPI_BBY31.js"></script>
   <script src="/scripts/searchresult.js"></script>
-  <!-- <script src="/scripts/mockitems.js"></script> -->
+  <script src="/scripts/Market.js"></script>
+  <script src="/scripts/displaydynamic.js"></script>
 
 
 
@@ -68,115 +68,61 @@
       </div>
     </div>
 
-    <div class="result1">
-      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
+    <div class="allresults" id="allresults">
+      <!-- template for dynamic cards -->
+      <template id="SearchResultTemplate">
+        <div class="result">
+          <img src="..." alt="..." class="image">
 
+          <div class="info">
+            <div class="store">
+              <img src="..." alt="..." class="storelogo">
+            </div>
+            <div class="item">itemname</div>
+            <div class="detail">detail</div>
+            <div class="price">price</div>
+          </div>
 
+          <div class="counter">
+            <span class="material-symbols-outlined" class="plus">
+              add_circle
+            </span>
 
-
-      <div class="info">
-        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
+            <div class="bookmark">
+              <span class="material-symbols-outlined">
+                bookmark
+              </span>
+            </div>
+          </div>
         </div>
-        <div class="item"><span id="itemname"></span></div>
-        <div class="detail">Fresh 206.67 g</div>
-        <div class="price">$ 0.91 / gram</div>
-      </div>
+      </template>
 
+      <div class="result">
+        <img src="/images/apples/ambrosia.png" alt="..." class="image">
 
-      <div class="counter">
-        <span class="material-symbols-outlined" class="plus">
-          add_circle
-        </span>
-
-        <div class="bookmark"><span class="material-symbols-outlined">
-            bookmark
-          </span></div>
-      </div>
-
-    </div>
-
-    <div class="result2">
-      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
-
-
-
-
-      <div class="info">
-        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
+        <div class="info">
+          <div class="store">
+            <img src="/images/StoreLogoShort/Walmart_logo.png" alt="..." class="storelogo">
+          </div>
+          <div class="item">itemname</div>
+          <div class="detail">detail</div>
+          <div class="price">price</div>
         </div>
-        <div class="item">Apple, Ambrosia</div>
-        <div class="detail">Fresh 206.67 g</div>
-        <div class="price">$ 0.91 / gram</div>
-      </div>
 
-
-      <div class="counter">
-        <span class="material-symbols-outlined" class="plus">
-          add_circle
-        </span>
-
-        <div class="bookmark">
-          <span class="material-symbols-outlined">
-            bookmark
+        <div class="counter">
+          <span class="material-symbols-outlined" class="plus">
+            add_circle
           </span>
+
+          <div class="bookmark">
+            <span class="material-symbols-outlined">
+              bookmark
+            </span>
+          </div>
         </div>
       </div>
-
     </div>
 
-    <div class="result3">
-      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
-
-
-
-
-      <div class="info">
-        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
-        </div>
-        <div class="item">Apple, Ambrosia</div>
-        <div class="detail">Fresh 206.67 g</div>
-        <div class="price">$ 0.91 / gram</div>
-      </div>
-
-
-      <div class="counter">
-        <span class="material-symbols-outlined" class="plus">
-          add_circle
-        </span>
-
-        <div class="bookmark"><span class="material-symbols-outlined">
-            bookmark
-          </span></div>
-      </div>
-
-    </div>
-
-    <div class="result4">
-      <img src="../images/apples/ambrosia.png" alt="picture 1" class="image">
-
-
-
-
-      <div class="info">
-        <div class="store"><img src="../images/StoreLogoShort/Walmart_logo.png" alt="store logo" class="storelogo">
-        </div>
-        <div class="item">Apple, Ambrosia</div>
-        <div class="detail">Fresh 206.67 g</div>
-        <div class="price">$ 0.91 / gram</div>
-      </div>
-
-
-      <div class="counter">
-        <span class="material-symbols-outlined" class="plus">
-          add_circle
-        </span>
-
-        <div class="bookmark"><span class="material-symbols-outlined">
-            bookmark
-          </span></div>
-      </div>
-
-    </div>
 
   </div>
 
