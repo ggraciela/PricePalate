@@ -1,0 +1,180 @@
+/* for the empty page */
+
+.centerempty {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+
+  grid-template-rows: 35% 10%;
+  grid-template-areas: 
+  "notif"
+  "redirect";
+
+}
+
+.redirect {
+  color: white;
+  background-color: #39A36A;
+  border-width: 0px;
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: large;
+  grid-area: redirect;
+  align-self: baseline;
+}
+
+.notif {
+  grid-area: notif;
+  align-self: flex-end;
+}
+
+
+
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+
+/* header & searchbar */
+header {
+  background-color: #39A36A;
+  width: 100%;
+  /* justify-items: center; */
+  /* align-items: center; */
+  display: grid;
+
+  object-fit: contain;
+  grid-template-columns: 85% 15%;
+  grid-template-areas:
+    "searchbar magnifying";
+
+  position: fixed;
+  top: 0;
+
+}
+
+
+.searchbar {
+  margin: auto;
+  /* justify-self: center; */
+  height: 75px;
+  width: 100%;
+  /* align-items: center; */
+  grid-area: searchbar;
+
+  /* display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "input"; */
+}
+
+input {
+  width: 97%;
+  margin-left: 3%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-area: input;
+}
+
+/* vertically center placeholder text */
+/* input::placeholder {
+  transform: translateY(-7px);
+  font-size: 15px;
+} */
+
+/* to make placeholder text in the search bar disappear upon clicking the form */
+input:focus::placeholder {
+  color: transparent;
+}
+
+
+.magnifying {
+  grid-area: magnifying;
+}
+
+header .material-symbols-outlined {
+  background-color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
+  height: fit-content;
+  width: fit-content;
+  /* padding-top: 15px; */
+}
+
+
+
+
+/* footer */
+
+footer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80% 20%;
+  align-items: center;
+  justify-items: center;
+
+  padding-bottom: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+footer .material-symbols-outlined {
+  font-size: 40px;
+  color: #8F8F8F;
+}
+
+.list .material-symbols-outlined {
+  font-size: 45px;
+}
+
+
+.account .material-symbols-outlined {
+  font-size: 40px;
+}
+
+.search .material-symbols-outlined {
+  color: #39A36A;
+}
+
+.texthome,
+.textlist,
+.textaccount {
+  color: #8F8F8F;
+  font-weight: bold;
+}
+
+.textsearch {
+  color: #39A36A;
+  font-weight: bold;
+}
+
+footer {
+  border-style: solid;
+  border-color: #8F8F8F;
+  border-width: 1px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+

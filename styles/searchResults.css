@@ -7,61 +7,8 @@ html, body {
 }
 
 
-.top {
-  display: grid;
-  grid-area: top;
-  margin-top: 5px;
-  padding-bottom: 20px;
 
-  align-items: center;
-
-  grid-template-columns: 85% 15%;
-  grid-template-areas:
-    "text sort";
-}
-
-.text {
-  grid-area: text;
-  align-self: right;
-}
-
-
-.sort {
-  grid-area: sort;
-  justify-self: center;
-}
-
-.sort .material-symbols-outlined {
-  font-size: 40px;
-}
-
-
-
-
-body {
-  display: grid;
-  /* width: 90vw; */
-  object-fit: contain;
-
-}
-
-.container {
-  /* grid-template-columns: 80% 10%; */
-  /* width: 90vw; */
-  /* margin: auto; */
-  margin-top: 75px;
-  margin-bottom: 70px;
-  padding-right: 3%;
-  padding-left: 3%;
-
-  grid-template-areas:
-    "top"
-    "allresults";
-  
-}
-
-
-
+/* header & searchbar */
 header {
   background-color: #39A36A;
   width: 100%;
@@ -136,7 +83,65 @@ header .material-symbols-outlined {
 }
 
 
+/* search result & sort button */
+.top {
+  display: grid;
+  grid-area: top;
+  margin-top: 5px;
+  padding-bottom: 20px;
 
+  align-items: center;
+
+  grid-template-columns: 85% 15%;
+  grid-template-areas:
+    "text sort";
+}
+
+.text {
+  grid-area: text;
+  align-self: right;
+}
+
+
+.sort {
+  grid-area: sort;
+  justify-self: center;
+}
+
+.sort .material-symbols-outlined {
+  font-size: 40px;
+}
+
+
+
+
+/* body & container */
+body {
+  display: grid;
+  /* width: 90vw; */
+  object-fit: contain;
+
+}
+
+.container {
+  /* grid-template-columns: 80% 10%; */
+  /* width: 90vw; */
+  /* margin: auto; */
+  margin-top: 75px;
+  margin-bottom: 70px;
+  padding-right: 3%;
+  padding-left: 3%;
+
+  grid-template-areas:
+    "top"
+    "allresults";
+  
+}
+
+
+
+
+/* results */
 .allresults {
   grid-area: allresults;
   grid-template-columns: 80vw;
@@ -165,35 +170,9 @@ header .material-symbols-outlined {
 
 }
 
-.info {
-  display: grid;
-  grid-template-rows: 40% 20% 20% 20%;
 
-  grid-template-areas:
-    "store"
-    "price"
-    "item"
-    "detail"
-    
-}
 
-.counter {
-  display: grid;
-  /* align-items: center; */
-  justify-items: center;
-  grid-template-rows: 50% 50%;
-
-  padding-left: 3%;
-  padding-right: 3%;
-  grid-template-areas:
-    "plus"
-    "bookmark";
-}
-
-.bookmark {
-  align-self: flex-end;
-}
-
+/* image on the left */
 
 .image {
   grid-area: image;
@@ -204,6 +183,19 @@ header .material-symbols-outlined {
   padding-left: 3%;
 
   align-self: center;
+}
+
+/* info in the middle */
+.info {
+  display: grid;
+  grid-template-rows: 40% 20% 20% 20%;
+
+  grid-template-areas:
+    "store"
+    "price"
+    "item"
+    "detail"
+    
 }
 
 .info {
@@ -236,20 +228,43 @@ header .material-symbols-outlined {
   grid-area: price;
 }
 
+
+
+/* on the right: counter or now just add and bookmark */
+.counter {
+  display: grid;
+  /* align-items: center; */
+  justify-items: center;
+  grid-template-rows: 50% 50%;
+
+  padding-left: 3%;
+  padding-right: 3%;
+  grid-template-areas:
+    "plus"
+    "bookmark";
+}
+
 .counter {
   grid-area: counter;
+}
+
+
+.bookmark {
+  align-self: flex-end;
 }
 
 .plus {
   grid-area: plus;
 }
 
-.qty {
-  grid-area: qty;
+.counter .material-symbols-outlined {
+  font-size: 35px;
+  /* color: ; */
 }
 
-.minus {
-  grid-area: minus;
+.bookmark .material-symbols-outlined {
+  font-size: 45px;
+  /* color: ; */
 }
 
 #footer {
