@@ -2,7 +2,7 @@
 // Input parameter is a string representing the collection we are reading from
 //------------------------------------------------------------------------------
 function displayCardsDynamically(collection) {
-  let cardTemplate = document.getElementById("SearchResultTemplate"); // Retrieve the HTML element with the ID "hikeCardTemplate" and store it in the cardTemplate variable. 
+  let cardTemplate = document.getElementById("searchresulttemplate"); // Retrieve the HTML element with the ID "hikeCardTemplate" and store it in the cardTemplate variable. 
 
   db.collection(collection).get()   //the collection called "hikes"
       .then(allResults=> {
@@ -13,12 +13,14 @@ function displayCardsDynamically(collection) {
               var itemname = doc.data().productFullName;      
               var detail = doc.data().description; 
               var price = doc.data().price; 
+              var store = doc.data().store; 
               let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
 
               //update title and text and image
               newcard.querySelector('.price').innerHTML = price;
               newcard.querySelector('.item').innerHTML = itemname;
               newcard.querySelector('.detail').innerHTML = detail;
+              newcard.querySelector('.store').innerHTML = store;
               newcard.querySelector('.image').innerHTML = image; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
 
               //Optional: give unique ids to all elements for future use
@@ -34,4 +36,4 @@ function displayCardsDynamically(collection) {
       })
 }
 
-displayCardsDynamically("walmartX");  //input param is the name of the collection
+displayCardsDynamically("walmart");  //input param is the name of the collection
