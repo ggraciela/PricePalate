@@ -103,7 +103,9 @@ header .material-symbols-outlined {
   height: 100vh;
   width: 100vw;
   grid-template-columns: 25vw 25vw 25vw 25vw;
-  grid-template-rows:15vh 70vh 15vh
+  grid-template-rows:15vh 70vh 15vh;
+  
+  
 }
 
 #heading {
@@ -130,14 +132,22 @@ header .material-symbols-outlined {
 
 
 .cards {
+  margin: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(230px, 1fr));
   grid-gap: 20px;
+  position:relative;
+  margin-bottom: 10%;
+  
+
 }
 
 .card {
+  width: 35vw;
   display: grid;
   grid-template-rows: max-content 200px 1fr;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card img {
