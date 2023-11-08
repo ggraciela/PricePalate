@@ -7,7 +7,7 @@ function Wmarket() {
       itemid: "aB1cD2",
       description: "Fresh and nutritious milk",
       price: 2.99,
-      img-url: "https://example.com/milk.jpg",
+      imgurl: "https://example.com/milk.jpg",
       productFullName: "Milk"
     });
 
@@ -15,7 +15,7 @@ function Wmarket() {
      itemid: "xY3zEf",
      description: "Farm-fresh eggs",
      price: 1.99,
-     img-url: "https://example.com/eggs.jpg",
+     imgurl: "https://example.com/eggs.jpg",
      productFullName: "Eggs"
     });
 
@@ -24,7 +24,7 @@ function Wmarket() {
      itemid: "pQ5rGh",
      description: "Whole grain bread",
      price: 3.49,
-     img-url: "https://example.com/bread.jpg",
+     imgurl: "https://example.com/bread.jpg",
      productFullName: "Bread"
     });
 
@@ -210,5 +210,5 @@ function Wmarket() {
     //   "img-url": "https://example.com/toilet-paper-soft.jpg",
     //   "productFullName": "Toilet Paper"
     }
-  ]
-}
+  
+

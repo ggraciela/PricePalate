@@ -7,8 +7,9 @@ function displayCardsDynamically(collection) {
   db.collection(collection).get()   //the collection called "hikes"
       .then(allResults=> {
           allResults.forEach(doc => { //iterate thru each doc
+            console.log(doc.data());
               var itemid = doc.data().itemid; 
-              var image = doc.data().img-url; 
+              var image = doc.data().imgurl; 
               var itemname = doc.data().productFullName;      
               var detail = doc.data().description; 
               var price = doc.data().price; 
@@ -26,7 +27,7 @@ function displayCardsDynamically(collection) {
               // newcard.querySelector('.card-image').setAttribute("id", "cimage" + i);
 
               //attach to gallery, Example: "hikes-go-here"
-              document.getElementById(collection).appendChild(newcard);
+              document.getElementById('allresults').appendChild(newcard);
 
               //i++;   //Optional: iterate variable to serve as unique ID
           })
