@@ -55,6 +55,15 @@ body, html {
   display: flex;
   justify-content: center;
 }
+#message {
+  overflow: hidden;
+  position: absolute;
+  top: 35%;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
 
 #savebox {
   overflow: hidden;
