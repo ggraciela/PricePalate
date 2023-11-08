@@ -20,11 +20,16 @@
 </head>
 
 <body>
-  <header class="top">
-      <form id="searchbar">
-        <input id="insidebox" type="text" placeholder="Search" required>
-        <button type="submit"><span class="material-symbols-outlined">search</span></button>
+  <header>
+    <div class="searchbar">
+      <form>
+        <input type="text" id="search" placeholder="Search..">
       </form>
+  
+    </div class="magnifying">
+    <span class="material-symbols-outlined">
+      search
+    </span>
   </header>
 
   <!--Placeholder for shopping list items, dynamic list from "Research page" requires JS-->
@@ -72,20 +77,21 @@
   <footer id="footer">
     <a href="#home">
         <span class="material-symbols-outlined">home</span>
-        <div>HOME</div>
+        <div>Home</div>
     </a>
     <a href="#search">
         <span class="material-symbols-outlined">search</span>
-        <div>SEARCH</div>
+        <div>Search</div>
     </a>
     <a href="#list">
         <span class="material-symbols-outlined">playlist_add_check</span>
-        <div>LIST</div>
+        <div>List</div>
     </a>
-    <a href="#account">
-      <span class="material-symbols-outlined">person</span>
-        <div>ACCOUNT</div>
-
+    <a href="#sales">
+        <span class="material-symbols-outlined">account_circle</span>
+        <div>My Page</div>
+    </a>
+    </footer>
     <script src="/scripts/firebaseAPI_BBY31.js"></script>
     <script src="/scripts/market.js"></script>
 </body>

@@ -1,7 +1,10 @@
 * {
   font-family: 'Quicksand', sans-serif;
 }
-
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 
 .top {
@@ -249,19 +252,30 @@ header .material-symbols-outlined {
   grid-area: minus;
 }
 
-footer {
+#footer {
+  display: flex;
+  justify-content: space-around;
   background-color: white;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80% 20%;
-  align-items: center;
-  justify-items: center;
-
-  padding-bottom: 20px;
+  overflow: hidden;
   position: fixed;
-  left: 0;
+  border-style: solid;
+  border-color: #8F8F8F;
   bottom: 0;
   width: 100%;
+}
+.textprompt {
+  margin: 1em;
+  font-size: 30px;
+  text-align: center;
+}
+#footer a {
+  float: left;
+  display: block;
+  color: #8F8F8F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 
@@ -275,10 +289,10 @@ footer {
   /* color: ; */
 }
 
-footer .material-symbols-outlined {
+/* footer .material-symbols-outlined {
   font-size: 40px;
   color: #8F8F8F;
-}
+} */
 
 .list .material-symbols-outlined {
   font-size: 45px;
@@ -305,11 +319,11 @@ footer .material-symbols-outlined {
   font-weight: bold;
 }
 
-footer {
+/* footer {
   border-style: solid;
   border-color: #8F8F8F;
   border-width: 1px;
   border-bottom: 0px;
   border-left: 0px;
   border-right: 0px;
-}
+} */

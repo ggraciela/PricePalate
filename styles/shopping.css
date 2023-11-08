@@ -1,24 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 body, html {
-  margin-left:0px;
-  margin-right:0px;
-  margin-bottom:0px;
-  margin-top:0px;
-  position: relative;
+  margin: 0;
+  padding: 0;
   }
 
 * {
   font-family: 'Quicksand', sans-serif;
 }
 
-.top {
+/* .top {
   width: 100vw;
   height: 5vh;
   background-color: #39A36A;
-}
+} */
 
-#searchbar {
+/* #searchbar {
   background-color: white;
   border-radius: 5px;
   position: relative; 
@@ -32,7 +29,74 @@ body, html {
 
 #insidebox {
   width: 100vw;
+} */
+header {
+  background-color: #39A36A;
+  width: 100%;
+  /* justify-items: center; */
+  /* align-items: center; */
+  display: grid;
+  object-fit: contain;
+  grid-template-columns: 85% 15%;
+  grid-template-areas:
+    "searchbar magnifying";
 }
+
+.searchbar {
+  margin: auto;
+  /* justify-self: center; */
+  height: 75px;
+  width: 100%;
+  /* align-items: center; */
+  grid-area: searchbar;
+
+  /* display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: 
+  "input"; */
+}
+
+input {
+  width: 97%;
+  margin-left: 3%;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-width: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-area: input;
+}
+
+/* vertically center placeholder text */
+/* input::placeholder {
+  transform: translateY(-7px);
+  font-size: 15px;
+} */
+
+/* to make placeholder text in the search bar disappear upon clicking the form */
+input:focus::placeholder {
+  color: transparent;
+}
+
+
+.magnifying {
+  grid-area: magnifying;
+}
+
+header .material-symbols-outlined {
+  background-color: white;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 3px;
+  padding-left: 3px;
+  height: fit-content;
+  width: fit-content;
+  /* padding-top: 15px; */
+}
+
 
 .container {
   display: grid;
