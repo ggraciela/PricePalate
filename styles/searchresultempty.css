@@ -1,5 +1,8 @@
 /* for the empty page */
-
+html, body {
+  margin: 0;
+  padding: 0;
+}
 .centerempty {
   margin-top: 75px;
   margin-bottom: 75px;
@@ -122,25 +125,30 @@ header .material-symbols-outlined {
 
 /* footer */
 
-footer {
+#footer {
+  display: flex;
+  justify-content: space-around;
   background-color: white;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 80% 20%;
-  align-items: center;
-  justify-items: center;
-
-  padding-bottom: 20px;
+  overflow: hidden;
   position: fixed;
-  left: 0;
+  border-style: solid;
+  border-color: #8F8F8F;
   bottom: 0;
   width: 100%;
 }
-
-
-footer .material-symbols-outlined {
-  font-size: 40px;
+.textprompt {
+  margin: 1em;
+  font-size: 30px;
+  text-align: center;
+}
+#footer a {
+  float: left;
+  display: block;
   color: #8F8F8F;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .list .material-symbols-outlined {
