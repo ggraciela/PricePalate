@@ -3,7 +3,7 @@
 <head>
   <title>Blank Shopping List Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../styles/shopping.css">
+  <link rel="stylesheet" href="../styles/shoppingb.css">
 
   <!-- link for icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -35,16 +35,9 @@
   <!--Placeholder for shopping list items, dynamic list from "Research page" requires JS-->
   <section class="container">
 
-    <div id="heading">
-      <h3>Shopping Lists</h3>
-    </div>
-    
-    <div id="message">
-      <p><b>There's nothing in your shopping list yet</b></p>
-    </div>
-
-    <div id="items">
-      
+    <div class="centerempty">
+      <p class="notif">There’s nothing in you shopping list yet, </p>
+      <button type="button" class="redirect">Let’s add some items!</button>
     </div>
 
     
@@ -67,9 +60,9 @@
         <span class="material-symbols-outlined">playlist_add_check</span>
         <div>List</div>
     </a>
-    <a href="#sales">
-        <span class="material-symbols-outlined">account_circle</span>
-        <div>My Page</div>
+    <a href="#bookmark">
+      <span class="material-symbols-outlined">bookmark</span>
+      <div>Bookmark</div>
     </a>
   </footer>
     <script src="/scripts/firebaseAPI_BBY31.js"></script>
