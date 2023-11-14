@@ -3,8 +3,12 @@
 //------------------------------------------------------------------------------
 function displayCardsDynamically(collection) {
   let cardTemplate = document.getElementById("searchresulttemplate"); // Retrieve the HTML element with the ID "hikeCardTemplate" and store it in the cardTemplate variable. 
+//  var inputkeyword = "beans";
 
-  db.collection(collection).get()   //the collection called "hikes"
+  db.collection(collection)
+  .orderby('price', desc) 
+      // .where('keyword', "==", inputkeyword)
+      .get()   //the collection called "hikes"
       .then(allResults=> {
           allResults.forEach(doc => { //iterate thru each doc
             console.log(doc.data());
@@ -21,7 +25,7 @@ function displayCardsDynamically(collection) {
               newcard.querySelector('.item').innerHTML = itemname;
               newcard.querySelector('.detail').innerHTML = detail;
               newcard.querySelector('.store').innerHTML = store;
-              newcard.querySelector('.image').innerHTML = image; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
+              // newcard.querySelector('#image').innertext = image; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
 
               //Optional: give unique ids to all elements for future use
               // newcard.querySelector('.card-title').setAttribute("id", "ctitle" + i);
@@ -36,4 +40,4 @@ function displayCardsDynamically(collection) {
       })
 }
 
-displayCardsDynamically("walmart");  //input param is the name of the collection
+displayCardsDynamically("market");  //input param is the name of the collection

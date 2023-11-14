@@ -106,6 +106,7 @@ header .material-symbols-outlined {
 .sort {
   grid-area: sort;
   justify-self: center;
+  visibility: hidden;
 }
 
 .sort .material-symbols-outlined {
