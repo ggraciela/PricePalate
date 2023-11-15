@@ -183,6 +183,11 @@ header .material-symbols-outlined {
 }
 
 
+button:hover {
+  cursor: pointer;
+}
+
+
 
 
 

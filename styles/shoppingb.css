@@ -146,3 +146,8 @@ header .material-symbols-outlined {
   text-decoration: none;
   font-size: 17px;
 }
+
+
+button:hover {
+  cursor: pointer;
+}

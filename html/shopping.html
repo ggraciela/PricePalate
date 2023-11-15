@@ -30,35 +30,20 @@
     </div>
 
     <div id="items">
-      <div class="list-group-item">
+      <template id="list-template">
+      <div class="list-group-item" >
         <div class="item-name">item 1</div>
         <div class="item-price">$$$</div>
         <div class="item-store">Store</div>
         <span class="material-symbols-outlined">delete</span>
       </div>
-      <div class="list-group-item">
-        <div class="item-name">item 1</div>
-        <div class="item-price">$$$</div>
-        <div class="item-store">Store</div>
-        <span class="material-symbols-outlined">delete</span>
-      </div>
-      <div class="list-group-item">
-        <div class="item-name">item 1</div>
-        <div class="item-price">$$$</div>
-        <div class="item-store">Store</div>
-        <span class="material-symbols-outlined">delete</span>
-      </div>
-      <div class="list-group-item">
-        <div class="item-name">item 1</div>
-        <div class="item-price">$$$</div>
-        <div class="item-store">Store</div>
-        <span class="material-symbols-outlined">delete</span>
-      </div>
+    </template>
+      
       
     </div>
 
     <div id="savebox">
-      <button type="button" class="btn btn-primary custom-button">Save Shopping List</button>
+      <button type="button" class="btn btn-primary custom-button" onclick="saveList()">Save Shopping List</button>
     </div>
   </section>
 
@@ -67,5 +52,6 @@
     <script src="/scripts/firebaseAPI_BBY31.js"></script>
     <script src="/scripts/market.js"></script>
     <script src="/scripts/skeleton.js"></script>
+    <script src="/scripts/shoppinglist.js"></script>
   </body>
 </html>
