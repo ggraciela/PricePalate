@@ -77,80 +77,45 @@ header .material-symbols-outlined {
 }
 
 
-.container {
+
+.centerempty {
+  margin-top: 75px;
+  margin-bottom: 75px;
   display: grid;
+  justify-items: center;
+  align-items: center;
   height: 100vh;
-  width: 100vw;
-  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-  grid-template-rows:15vh 70vh 15vh
+
+  grid-template-rows: 35% 10%;
+  grid-template-areas: 
+  "notif"
+  "redirect";
+
 }
 
-#heading {
-  grid-column: 1/span 5;
-  grid-row: 1/span 1;
-  display: flex;
-  justify-content: center;
-}
-
-#items {
-  grid-column: 1/span 5;
-  grid-row: 2/span 1;
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-
-
-.list-group-item {
-  margin-left: 10%;
-  margin-right: 10%;
-  display: grid;
-  grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
-  padding-bottom: 15px;
-}
-
-.item-name {
-  grid-column: 2/span 1;
-  text-align: center;
-}
-.item-price{
-  grid-column: 3/span 1;
-  text-align: center;
-}
-.item-store{
-  grid-column: 4/span 1;
-  text-align: center;
-}
-
-#message {
-  overflow: hidden;
-  position: absolute;
-  top: 35%;
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-}
-
-
-#savebox {
-  overflow: hidden;
-  background-color: white;  
-  position: fixed;
-  bottom: 125px;
-  width: 100%; 
-   
-}
-
-#savebox button{
-  background-color: #39A36A;
+.redirect {
   color: white;
-  padding: 5px 15px;
-  border-radius: 5px;
-  border-style: none;
-  margin:0 auto;
-  display:block;
+  background-color: #39A36A;
+  border-width: 0px;
+  border-radius: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: large;
+  grid-area: redirect;
+  align-self: baseline;
+}
+
+.notif {
+  grid-area: notif;
+  align-self: flex-end;
+}
+
+
+
+* {
+  font-family: 'Quicksand', sans-serif;
 }
 
 .material-symbols-outlined {
@@ -186,10 +151,3 @@ header .material-symbols-outlined {
 button:hover {
   cursor: pointer;
 }
-
-
-
-
-
-
-
