@@ -22,7 +22,7 @@ function displayCardsDynamically(collection) {
         let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
 
         //update title and text and image
-        newcard.querySelector('.price').innerHTML = price;
+        newcard.querySelector('.price').innerHTML = "$" + price;
         newcard.querySelector('.item').innerHTML = itemname;
         newcard.querySelector('.detail').innerHTML = detail;
         // newcard.querySelector('.store').innerHTML = store;
