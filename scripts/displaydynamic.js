@@ -6,7 +6,7 @@ function displayCardsDynamically(collection) {
 //  var inputkeyword = "beans";
 
   db.collection(collection)
-  .orderby('price', desc) 
+  .orderBy('price')  
       // .where('keyword', "==", inputkeyword)
       .get()   //the collection called "hikes"
       .then(allResults=> {
@@ -25,7 +25,7 @@ function displayCardsDynamically(collection) {
               newcard.querySelector('.item').innerHTML = itemname;
               newcard.querySelector('.detail').innerHTML = detail;
               newcard.querySelector('.store').innerHTML = store;
-              // newcard.querySelector('#image').innertext = image; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
+              // newcard.getElementById("#image").src = "(imgurl)"; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
 
               //Optional: give unique ids to all elements for future use
               // newcard.querySelector('.card-title').setAttribute("id", "ctitle" + i);
