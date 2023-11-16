@@ -35,6 +35,7 @@
 
 
 
+
 </head>
 
 <header id="navbarPlaceholder"></header>
@@ -57,11 +58,11 @@
       <!-- template for dynamic cards -->
       <template id="searchresulttemplate">
         <div class="result">
-          <img src="..." alt="..." id="image">
+          <img src="..." alt="..." id="productimage">
 
           <div class="info">
             <div class="store">
-              <img src="..." alt="..." class="storelogo">
+              <img src="..." alt="..." id="storelogo">
             </div>
             <div class="item">itemname</div>
             <div class="detail">detail</div>
@@ -69,21 +70,16 @@
           </div>
 
           <div class="counter">
-            <span class="material-symbols-outlined" class="plus">
-              add_circle
-            </span>
-
-            <div class="bookmark">
-              <span class="material-symbols-outlined">
-                bookmark
+            <button type="button" class="addbutton" onclick="plusbutton()"><span class="material-symbols-outlined" class="plus">
+                add_circle
               </span>
-            </div>
+            </button>
           </div>
         </div>
       </template>
 
       <!-- testing css grid layout -->
-      <div class="result">
+      <!-- <div class="result">
         <img src="../images/apples/ambrosia.png" alt="..." class="image">
 
         <div class="info">
@@ -100,13 +96,8 @@
             add_circle
           </span>
 
-          <div class="bookmark">
-            <span class="material-symbols-outlined">
-              bookmark
-            </span>
-          </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
 

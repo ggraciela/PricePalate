@@ -6,7 +6,7 @@ function wmarket() {
     id: "aB1cD2",
     description: "Fresh and nutritious milk",
     price: 2.99,
-    imgurl: "https://example.com/milk.jpg",
+    imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
     store: "walmart",
   });
@@ -15,7 +15,7 @@ function wmarket() {
     id: "xY3zEf",
     description: "Farm-fresh eggs",
     price: 1.99,
-    imgurl: "https://example.com/eggs.jpg",
+    imgurl: "../images/products/eggs.jpg",
     productFullName: "Eggs",
     store: "walmart",
   });
@@ -24,7 +24,7 @@ function wmarket() {
     id: "pQ5rGh",
     description: "Whole grain bread",
     price: 3.49,
-    imgurl: "https://example.com/bread.jpg",
+    imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
     store: "walmart",
   });
@@ -33,7 +33,7 @@ function wmarket() {
     id: "sT6uJk",
     description: "Long-grain white rice",
     price: 4.99,
-    imgurl: "https://example.com/rice.jpg",
+    imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
     store: "walmart",
   });
@@ -42,7 +42,7 @@ function wmarket() {
     id: "vW7xYl",
     description: "Penne pasta made from durum wheat",
     price: 1.79,
-    imgurl: "https://example.com/pasta.jpg",
+    imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
     store: "walmart",
   });
@@ -51,7 +51,7 @@ function wmarket() {
     id: "mZ8aNm",
     description: "Sweet and crunchy apples",
     price: 0.99,
-    imgurl: "https://example.com/apples.jpg",
+    imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
     store: "walmart",
   });
@@ -60,7 +60,7 @@ function wmarket() {
     id: "bB9oPn",
     description: "Delicious and ripe bananas",
     price: 0.59,
-    imgurl: "https://example.com/bananas.jpg",
+    imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
     store: "walmart",
   });
@@ -69,7 +69,7 @@ function wmarket() {
     id: "kC0qAr",
     description: "Juicy and refreshing oranges",
     price: 1.29,
-    imgurl: "https://example.com/oranges.jpg",
+    imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
     store: "walmart",
   });
@@ -78,7 +78,7 @@ function wmarket() {
     id: "dD1rBs",
     description: "Crisp lettuce for salads",
     price: 1.49,
-    imgurl: "https://example.com/lettuce.jpg",
+    imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
     store: "walmart",
   });
@@ -87,7 +87,7 @@ function wmarket() {
     id: "lE2sCt",
     description: "Sweet and tangy tomatoes",
     price: 0.79,
-    imgurl: "https://example.com/tomatoes.jpg",
+    imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
     store: "walmart",
   });
@@ -96,7 +96,7 @@ function wmarket() {
     id: "fF3uDv",
     description: "Crunchy carrots",
     price: 0.69,
-    imgurl: "https://example.com/carrots.jpg",
+    imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
     store: "walmart",
   });
@@ -105,7 +105,7 @@ function wmarket() {
     id: "gG4wEx",
     description: "Fresh chicken breast",
     price: 5.99,
-    imgurl: "https://example.com/chicken.jpg",
+    imgurl: "../images/products/chicken.jpg",
     productFullName: "Chicken Breast",
     store: "walmart",
   });
@@ -114,7 +114,7 @@ function wmarket() {
     id: "hH5xJy",
     description: "Lean ground beef",
     price: 4.49,
-    imgurl: "https://example.com/beef.jpg",
+    imgurl: "../images/products/beef.jpg",
     productFullName: "Ground Beef",
     store: "walmart",
   });
@@ -123,7 +123,7 @@ function wmarket() {
     id: "iI6zKz",
     description: "Tender fish fillet",
     price: 6.99,
-    imgurl: "https://example.com/fish.jpg",
+    imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
     store: "walmart",
   });
@@ -132,7 +132,7 @@ function wmarket() {
     id: "jJ7AL1",
     description: "Creamy butter",
     price: 2.49,
-    imgurl: "https://example.com/butter.jpg",
+    imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
     store: "walmart",
   });
@@ -141,7 +141,7 @@ function wmarket() {
     id: "kK8BM2",
     description: "Variety of cheese",
     price: 3.79,
-    imgurl: "https://example.com/cheese.jpg",
+    imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
     store: "walmart"
   });
@@ -150,7 +150,7 @@ function wmarket() {
     id: "lL9cN3",
     description: "Thick and creamy yogurt",
     price: 1.29,
-    imgurl: "https://example.com/yogurt.jpg",
+    imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
     store: "walmart"
   });
@@ -159,7 +159,7 @@ function wmarket() {
     id: "mM0dO4",
     description: "Healthy and crunchy cereal",
     price: 3.99,
-    imgurl: "https://example.com/cereal.jpg",
+    imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
     store: "walmart"
   });
@@ -168,7 +168,7 @@ function wmarket() {
     id: "nN1eP5",
     description: "Tasty canned beans",
     price: 1.29,
-    imgurl: "https://example.com/beans.jpg",
+    imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
     store: "walmart"
   });
@@ -177,7 +177,7 @@ function wmarket() {
     id: "oO2fQ6",
     description: "High-quality canned tomatoes",
     price: 1.49,
-    imgurl: "https://example.com/tomatoes-canned.jpg",
+    imgurl: "../images/products/tomatoes-canned.jpg",
     productFullName: "Canned Tomatoes",
     store: "walmart"
   });
@@ -186,7 +186,7 @@ function wmarket() {
     id: "pP3gR7",
     description: "Variety of frozen vegetables",
     price: 2.79,
-    imgurl: "https://example.com/frozen-vegetables.jpg",
+    imgurl: "../images/products/frozen-vegetables.jpg",
     productFullName: "Frozen Vegetables",
     store: "walmart"
   });
@@ -195,7 +195,7 @@ function wmarket() {
     id: "qQ4hS8",
     description: "Delicious frozen pizza",
     price: 4.99,
-    imgurl: "https://example.com/frozen-pizza.jpg",
+    imgurl: "../images/products/frozen-pizza.jpg",
     productFullName: "Frozen Pizza",
     store: "walmart"
   });
@@ -204,7 +204,7 @@ function wmarket() {
     id: "rR5iU9",
     description: "Creamy peanut butter",
     price: 3.29,
-    imgurl: "https://example.com/peanut-butter.jpg",
+    imgurl: "../images/products/peanut-butter.jpg",
     productFullName: "Peanut Butter",
     store: "walmart"
   });
@@ -213,7 +213,7 @@ function wmarket() {
     id: "sS6jV0",
     description: "Sweet jam or jelly",
     price: 2.49,
-    imgurl: "https://example.com/jam.jpg",
+    imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
     store: "walmart"
   });
@@ -222,7 +222,7 @@ function wmarket() {
     id: "tT7kW1",
     description: "Crunchy snack chips",
     price: 1.99,
-    imgurl: "https://example.com/chips.jpg",
+    imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
     store: "walmart"
   });
@@ -231,7 +231,7 @@ function wmarket() {
     id: "uU8lX2",
     description: "Rich and aromatic coffee",
     price: 8.99,
-    imgurl: "https://example.com/coffee.jpg",
+    imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
     store: "walmart"
   });
@@ -240,7 +240,7 @@ function wmarket() {
     id: "vV9mY3",
     description: "Variety of tea blends",
     price: 3.49,
-    imgurl: "https://example.com/tea.jpg",
+    imgurl: "../images/products/tea.jpg",
     productFullName: "Tea",
     store: "walmart"
   });
@@ -249,7 +249,7 @@ function wmarket() {
     id: "wW0nZ4",
     description: "Refreshing bottled water",
     price: 0.99,
-    imgurl: "https://example.com/bottled-water.jpg",
+    imgurl: "../images/products/bottled-water.jpg",
     productFullName: "Bottled Water",
     store: "walmart"
   });
@@ -258,7 +258,7 @@ function wmarket() {
     id: "xX1oA5",
     description: "Soft and gentle toilet paper",
     price: 5.99,
-    imgurl: "https://example.com/toilet-paper-soft.jpg",
+    imgurl: "../images/products/toilet-paper-soft.jpg",
     productFullName: "Toilet Paper",
     store: "walmart"
   });
@@ -273,7 +273,7 @@ function cmarket() {
     id: "1a2b3c",
     description: "Fresh and nutritious milk",
     price: 2.49,
-    imgurl: "https://example.com/milk.jpg",
+    imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
     store: "costco",
   });
@@ -282,7 +282,7 @@ function cmarket() {
     id: "4e5f6g",
     description: "Farm-fresh eggs",
     price: 2.29,
-    imgurl: "https://example.com/eggs.jpg",
+    imgurl: "../images/products/eggs.jpg",
     productFullName: "Eggs",
     store: "costco",
   });
@@ -291,7 +291,7 @@ function cmarket() {
     id: "7h8i9j",
     description: "Whole grain bread",
     price: 3.99,
-    imgurl: "https://example.com/bread.jpg",
+    imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
     store: "costco",
   });
@@ -300,7 +300,7 @@ function cmarket() {
     id: "k0l1m2",
     description: "Long-grain white rice",
     price: 5.49,
-    imgurl: "https://example.com/rice.jpg",
+    imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
     store: "costco",
   });
@@ -309,7 +309,7 @@ function cmarket() {
     id: "3n4o5p",
     description: "Penne pasta made from durum wheat",
     price: 1.99,
-    imgurl: "https://example.com/pasta.jpg",
+    imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
     store: "costco",
   });
@@ -318,7 +318,7 @@ function cmarket() {
     id: "6q7r8s",
     description: "Sweet and crunchy apples",
     price: 1.19,
-    imgurl: "https://example.com/apples.jpg",
+    imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
     store: "costco",
   });
@@ -327,7 +327,7 @@ function cmarket() {
     id: "9t0u1v",
     description: "Delicious and ripe bananas",
     price: 0.79,
-    imgurl: "https://example.com/bananas.jpg",
+    imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
     store: "costco",
   });
@@ -336,7 +336,7 @@ function cmarket() {
     id: "2w3x4y",
     description: "Juicy and refreshing oranges",
     price: 1.59,
-    imgurl: "https://example.com/oranges.jpg",
+    imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
     store: "costco",
   });
@@ -345,7 +345,7 @@ function cmarket() {
     id: "5z6A7B",
     description: "Crisp lettuce for salads",
     price: 1.29,
-    imgurl: "https://example.com/lettuce.jpg",
+    imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
     store: "costco",
   });
@@ -354,7 +354,7 @@ function cmarket() {
     id: "8C9d0E",
     description: "Sweet and tangy tomatoes",
     price: 0.89,
-    imgurl: "https://example.com/tomatoes.jpg",
+    imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
     store: "costco",
   });
@@ -363,7 +363,7 @@ function cmarket() {
     id: "1E2F3G",
     description: "Crunchy carrots",
     price: 0.99,
-    imgurl: "https://example.com/carrots.jpg",
+    imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
     store: "costco",
   });
@@ -372,7 +372,7 @@ function cmarket() {
     id: "4G5H6I",
     description: "Fresh chicken breast",
     price: 6.49,
-    imgurl: "https://example.com/chicken.jpg",
+    imgurl: "../images/products/chicken.jpg",
     productFullName: "Chicken Breast",
     store: "costco",
   });
@@ -381,7 +381,7 @@ function cmarket() {
     id: "7H8I9J",
     description: "Lean ground beef",
     price: 4.79,
-    imgurl: "https://example.com/beef.jpg",
+    imgurl: "../images/products/beef.jpg",
     productFullName: "Ground Beef",
     store: "costco",
   });
@@ -390,7 +390,7 @@ function cmarket() {
     id: "0I1J2K",
     description: "Tender fish fillet",
     price: 7.99,
-    imgurl: "https://example.com/fish.jpg",
+    imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
     store: "costco",
   });
@@ -399,7 +399,7 @@ function cmarket() {
     id: "3K4L5M",
     description: "Creamy butter",
     price: 2.79,
-    imgurl: "https://example.com/butter.jpg",
+    imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
     store: "costco",
   });
@@ -408,7 +408,7 @@ function cmarket() {
     id: "6M7N8O",
     description: "Variety of cheese",
     price: 3.19,
-    imgurl: "https://example.com/cheese.jpg",
+    imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
     store: "costco",
   });
@@ -417,7 +417,7 @@ function cmarket() {
     id: "9N0O1P",
     description: "Thick and creamy yogurt",
     price: 1.39,
-    imgurl: "https://example.com/yogurt.jpg",
+    imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
     store: "costco",
   });
@@ -426,7 +426,7 @@ function cmarket() {
     id: "2O3P4Q",
     description: "Healthy and crunchy cereal",
     price: 4.29,
-    imgurl: "https://example.com/cereal.jpg",
+    imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
     store: "costco",
   });
@@ -435,7 +435,7 @@ function cmarket() {
     id: "5P6Q7R",
     description: "Tasty canned beans",
     price: 1.69,
-    imgurl: "https://example.com/beans.jpg",
+    imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
     store: "costco",
   });
@@ -444,7 +444,7 @@ function cmarket() {
     id: "8R9S0T",
     description: "High-quality canned tomatoes",
     price: 1.99,
-    imgurl: "https://example.com/tomatoes-canned.jpg",
+    imgurl: "../images/products/tomatoes-canned.jpg",
     productFullName: "Canned Tomatoes",
     store: "costco",
   });
@@ -453,7 +453,7 @@ function cmarket() {
     id: "1S2T3U",
     description: "Variety of frozen vegetables",
     price: 2.59,
-    imgurl: "https://example.com/frozen-vegetables.jpg",
+    imgurl: "../images/products/frozen-vegetables.jpg",
     productFullName: "Frozen Vegetables",
     store: "costco",
   });
@@ -462,7 +462,7 @@ function cmarket() {
     id: "4U5V6W",
     description: "Delicious frozen pizza",
     price: 5.99,
-    imgurl: "https://example.com/frozen-pizza.jpg",
+    imgurl: "../images/products/frozen-pizza.jpg",
     productFullName: "Frozen Pizza",
     store: "costco",
   });
@@ -471,7 +471,7 @@ function cmarket() {
     id: "7W8X9Y",
     description: "Creamy peanut butter",
     price: 3.49,
-    imgurl: "https://example.com/peanut-butter.jpg",
+    imgurl: "../images/products/peanut-butter.jpg",
     productFullName: "Peanut Butter",
     store: "costco",
   });
@@ -480,7 +480,7 @@ function cmarket() {
     id: "0X1Y2Z",
     description: "Sweet jam or jelly",
     price: 2.29,
-    imgurl: "https://example.com/jam.jpg",
+    imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
     store: "costco",
   });
@@ -489,7 +489,7 @@ function cmarket() {
     id: "3Y4Z5A",
     description: "Crunchy snack chips",
     price: 2.09,
-    imgurl: "https://example.com/chips.jpg",
+    imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
     store: "costco",
   });
@@ -498,7 +498,7 @@ function cmarket() {
     id: "6Z7A8B",
     description: "Rich and aromatic coffee",
     price: 9.49,
-    imgurl: "https://example.com/coffee.jpg",
+    imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
     store: "costco",
   });

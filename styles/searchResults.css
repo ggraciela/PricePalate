@@ -175,7 +175,7 @@ body {
 
 /* image on the left */
 
-.image {
+.image , #productimage {
   grid-area: image;
   /* height: 100%; */
   width: 100%;
@@ -210,7 +210,7 @@ body {
 
 }
 
-.storelogo {
+#storelogo , .storelogo {
   height: 30px;
   padding-bottom: 2%;
 }
@@ -256,6 +256,11 @@ body {
 
 .plus {
   grid-area: plus;
+}
+
+.addbutton {
+  border-width: 0;
+  background-color: transparent;
 }
 
 .counter .material-symbols-outlined {
