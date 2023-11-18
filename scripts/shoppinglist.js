@@ -1,9 +1,8 @@
 //------------------------------------------------------------------------------
 // Input parameter is a string representing the collection we are reading from
 //------------------------------------------------------------------------------
-
-const currentUser = db.collection("users").doc("jW8OvbnZkGNpnvym2tEKmhrZKeA2"); //
-const hardCodeUserId = "jW8OvbnZkGNpnvym2tEKmhrZKeA2";
+const currentUser = db.collection("users").doc("yXsEZFc7kTdbuu3cePxcLdG9CBH3"); //
+const hardCodeUserId = "yXsEZFc7kTdbuu3cePxcLdG9CBH3";
 
 function addToList(productId) {
   currentUser
