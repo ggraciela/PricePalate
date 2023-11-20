@@ -45,24 +45,50 @@ button {
     grid-template-areas:
     "store1 store2"
     "store3 store4";
+    
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+
+    justify-items: center;
 
     gap: 1em;
 }
+
+img {
+    object-fit: contain;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 8%;
+}
+
+.storesbtn {
+    border-width: 0;
+    background-color: transparent;
+    width: fit-content;
+}
+
+.storesbtn:hover {
+    -webkit-box-shadow: 0px 5px 19px 3px #39A36A; 
+    box-shadow: 0px 5px 19px 3px #39A36A;
+}
+
+
 #store1 {
     grid-area: store1;
-    background-color: red;
+    
+    /* background-color: red; */
 }
 #store2 {
     grid-area: store2;
-    background-color: blue;
+    /* background-color: blue; */
 }
 #store3 {
     grid-area: store3;
-    background-color: green;
+    /* background-color: green; */
 }
 #store4 {
     grid-area: store4;
-    background-color: orange;
+    /* background-color: orange; */
 }
 #footer {
     display: flex;

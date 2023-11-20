@@ -67,3 +67,8 @@ displayCardsDynamically("market");  //input param is the name of the collection
 //     }
 //   });
 // }
+
+function dosearch() {
+  console.log("button clicked");
+  // window.location.href = "searchresults.html";
+}
