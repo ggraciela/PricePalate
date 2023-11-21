@@ -1,61 +1,90 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="../styles/main.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <style>
-            header {
-                font-family: Staatliches;
-                
-            }
-            body {
-                font-family: Quicksand;
-            }
-            a { text-decoration: none}
-        </style>
-    </head>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
 
-    <body>
-        <div id="container">
-            <header id="header">
-                PricePalate
-            </header>
-            <div class="textprompt">
-                Please choose your supermarkets
-            </div>
-            <div id="options">
-                <button class="storesbtn" id="walmartbtn" onclick="print1()">
-                        <img src="../images/StoreLogoFull/Walmart.png" alt="Walmart logo" id="store1">
-                </button>
-                <button class="storesbtn" id="costcobtn" onclick="print2()">
-                    <img src="../images/StoreLogoFull/Costco.png" alt="Costco logo" id="store2">
-                </button>
-                <button class="storesbtn" id="saveonfoodsbtn" onclick="print3()">
-                    <img src="../images/StoreLogoFull/Saveonfoods.jpg" alt="Save on Foods logo" id="store3">
-                </button>
-                <button class="storesbtn" id="tntbtn" onclick="print4()">
-                    <img src="../images/StoreLogoFull/T&T.png" alt="T&T logo" id="store4">
-                </button>
-            </div>
-            <div class="textprompt">
-                Please enter your items
-            </div>
-            <div id="searchbar">
-                <input type="text">
-                <button type="submit"><span class="material-symbols-outlined">search</span></button>
-            </div>
+    <style>
+        header {
+            font-family: Staatliches;
 
-            <footer id="footerPlaceholder"></footer>
+        }
+
+        body {
+            font-family: Quicksand;
+        }
+
+        a {
+            text-decoration: none
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            PricePalate
+        </header>
+        <div class="textprompt">
+            Please choose your supermarkets
         </div>
-        <script src="../scripts/skeleton.js"></script>
-        <script src="../scripts/main.js"></script>
+        <div id="options">
 
-    </body>
+            <input type="checkbox" id="walmartcb" onclick="print1()"/>
+            <label for="myCheckbox1"><img src="../images/StoreLogoFull/Walmart.png" id="store1"/></label>
+
+            <input type="checkbox" id="costcocb"  onclick="print2()"/>
+            <label for="myCheckbox1"><img src="../images/StoreLogoFull/Costco.png" id="store2"/></label>
+
+            <input type="checkbox" id="saveonfoodscb"  onclick="print3()"/>
+            <label for="myCheckbox1"><img src="../images/StoreLogoFull/Saveonfoods.jpg" /></label>
+
+            <input type="checkbox" id="tntcb"  onclick="print4()"/>
+            <label for="myCheckbox1"><img src="../images/StoreLogoFull/T&T.png" /></label>
+
+            <!-- <button class="storesbtn" id="walmartbtn" onclick="print1()">
+                <img src="../images/StoreLogoFull/Walmart.png" alt="Walmart logo" id="store1">
+            </button>
+            <button class="storesbtn" id="costcobtn" onclick="print2()">
+                <img src="../images/StoreLogoFull/Costco.png" alt="Costco logo" id="store2">
+            </button>
+            <button class="storesbtn" id="saveonfoodsbtn" onclick="print3()">
+                <img src="../images/StoreLogoFull/Saveonfoods.jpg" alt="Save on Foods logo" id="store3">
+            </button>
+            <button class="storesbtn" id="tntbtn" onclick="print4()">
+                <img src="../images/StoreLogoFull/T&T.png" alt="T&T logo" id="store4">
+            </button> -->
+        </div>
+        <div class="textprompt">
+            Please enter your items
+        </div>
+        <div id="searchbar">
+
+            <form>
+                <input type="text" id="search" placeholder="Search..">
+            </form>
+
+            <button type="button" id="searchbtn" onclick="dosearch()"><span
+                    class="material-symbols-outlined">search</span></button>
+        </div>
+
+        <footer id="footerPlaceholder"></footer>
+    </div>
+    <script src="../scripts/firebaseAPI_BBY31.js"></script>
+    <script src="../scripts/skeleton.js"></script>
+    <script src="../scripts/main.js"></script>
+
+</body>
+
 </html>

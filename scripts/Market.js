@@ -9,7 +9,8 @@ function wmarket() {
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "milk"
   });
 
   walmartItems.doc("xY3zEf").set({
@@ -19,7 +20,8 @@ function wmarket() {
     imgurl: "../images/products/eggs.jpg",
     productFullName: "Eggs",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "egg"
   });
 
   walmartItems.doc("pQ5rGh").set({
@@ -29,7 +31,8 @@ function wmarket() {
     imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "bread"
   });
 
   walmartItems.doc("sT6uJk").set({
@@ -39,7 +42,8 @@ function wmarket() {
     imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "rice"
   });
 
   walmartItems.doc("vW7xYl").set({
@@ -49,7 +53,8 @@ function wmarket() {
     imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "pasta"
   });
 
   walmartItems.doc("mZ8aNm").set({
@@ -59,7 +64,8 @@ function wmarket() {
     imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "apple"
   });
 
   walmartItems.doc("bB9oPn").set({
@@ -69,7 +75,8 @@ function wmarket() {
     imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("kC0qAr").set({
@@ -79,7 +86,8 @@ function wmarket() {
     imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("dD1rBs").set({
@@ -89,7 +97,8 @@ function wmarket() {
     imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("lE2sCt").set({
@@ -99,7 +108,8 @@ function wmarket() {
     imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("fF3uDv").set({
@@ -109,7 +119,8 @@ function wmarket() {
     imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("gG4wEx").set({
@@ -119,7 +130,8 @@ function wmarket() {
     imgurl: "../images/products/chicken.jpg",
     productFullName: "Chicken Breast",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("hH5xJy").set({
@@ -129,7 +141,8 @@ function wmarket() {
     imgurl: "../images/products/beef.jpg",
     productFullName: "Ground Beef",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("iI6zKz").set({
@@ -139,7 +152,8 @@ function wmarket() {
     imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("jJ7AL1").set({
@@ -149,7 +163,8 @@ function wmarket() {
     imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("kK8BM2").set({
@@ -159,7 +174,8 @@ function wmarket() {
     imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("lL9cN3").set({
@@ -169,7 +185,8 @@ function wmarket() {
     imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("mM0dO4").set({
@@ -179,7 +196,8 @@ function wmarket() {
     imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("nN1eP5").set({
@@ -189,7 +207,8 @@ function wmarket() {
     imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "beans"
   });
 
   walmartItems.doc("oO2fQ6").set({
@@ -199,7 +218,8 @@ function wmarket() {
     imgurl: "../images/products/tomatoes-canned.jpg",
     productFullName: "Canned Tomatoes",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("pP3gR7").set({
@@ -209,7 +229,8 @@ function wmarket() {
     imgurl: "../images/products/frozen-vegetables.jpg",
     productFullName: "Frozen Vegetables",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: "vegetable"
   });
 
   walmartItems.doc("qQ4hS8").set({
@@ -219,7 +240,8 @@ function wmarket() {
     imgurl: "../images/products/frozen-pizza.jpg",
     productFullName: "Frozen Pizza",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("rR5iU9").set({
@@ -229,7 +251,8 @@ function wmarket() {
     imgurl: "../images/products/peanut-butter.jpg",
     productFullName: "Peanut Butter",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("sS6jV0").set({
@@ -239,7 +262,8 @@ function wmarket() {
     imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("tT7kW1").set({
@@ -249,7 +273,8 @@ function wmarket() {
     imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("uU8lX2").set({
@@ -259,7 +284,8 @@ function wmarket() {
     imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("vV9mY3").set({
@@ -269,7 +295,8 @@ function wmarket() {
     imgurl: "../images/products/tea.jpg",
     productFullName: "Tea",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png",
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("wW0nZ4").set({
@@ -279,7 +306,8 @@ function wmarket() {
     imgurl: "../images/products/bottled-water.jpg",
     productFullName: "Bottled Water",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 
   walmartItems.doc("xX1oA5").set({
@@ -289,7 +317,8 @@ function wmarket() {
     imgurl: "../images/products/toilet-paper-soft.jpg",
     productFullName: "Toilet Paper",
     store: "walmart",
-    storelogo : "../images/storelogoshort/walmartlogo.png"
+    storelogo: "../images/storelogoshort/walmartlogo.png",
+    keywords: ""
   });
 }
 
@@ -305,8 +334,9 @@ function cmarket() {
     price: 2.49,
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("4e5f6g").set({
@@ -315,8 +345,9 @@ function cmarket() {
     price: 2.29,
     imgurl: "../images/products/eggs.jpg",
     productFullName: "Eggs",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("7h8i9j").set({
@@ -325,8 +356,9 @@ function cmarket() {
     price: 3.99,
     imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("k0l1m2").set({
@@ -335,8 +367,9 @@ function cmarket() {
     price: 5.49,
     imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("3n4o5p").set({
@@ -345,8 +378,9 @@ function cmarket() {
     price: 1.99,
     imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("6q7r8s").set({
@@ -355,8 +389,9 @@ function cmarket() {
     price: 1.19,
     imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("9t0u1v").set({
@@ -365,8 +400,9 @@ function cmarket() {
     price: 0.79,
     imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("2w3x4y").set({
@@ -375,8 +411,9 @@ function cmarket() {
     price: 1.59,
     imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("5z6A7B").set({
@@ -385,8 +422,9 @@ function cmarket() {
     price: 1.29,
     imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("8C9d0E").set({
@@ -395,8 +433,9 @@ function cmarket() {
     price: 0.89,
     imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("1E2F3G").set({
@@ -405,8 +444,9 @@ function cmarket() {
     price: 0.99,
     imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("4G5H6I").set({
@@ -415,8 +455,9 @@ function cmarket() {
     price: 6.49,
     imgurl: "../images/products/chicken.jpg",
     productFullName: "Chicken Breast",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("7H8I9J").set({
@@ -425,8 +466,9 @@ function cmarket() {
     price: 4.79,
     imgurl: "../images/products/beef.jpg",
     productFullName: "Ground Beef",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("0I1J2K").set({
@@ -435,8 +477,9 @@ function cmarket() {
     price: 7.99,
     imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("3K4L5M").set({
@@ -445,8 +488,9 @@ function cmarket() {
     price: 2.79,
     imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("6M7N8O").set({
@@ -455,8 +499,9 @@ function cmarket() {
     price: 3.19,
     imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("9N0O1P").set({
@@ -465,8 +510,9 @@ function cmarket() {
     price: 1.39,
     imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("2O3P4Q").set({
@@ -475,8 +521,9 @@ function cmarket() {
     price: 4.29,
     imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("5P6Q7R").set({
@@ -485,8 +532,9 @@ function cmarket() {
     price: 1.69,
     imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("8R9S0T").set({
@@ -495,8 +543,9 @@ function cmarket() {
     price: 1.99,
     imgurl: "../images/products/tomatoes-canned.jpg",
     productFullName: "Canned Tomatoes",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("1S2T3U").set({
@@ -505,8 +554,9 @@ function cmarket() {
     price: 2.59,
     imgurl: "../images/products/frozen-vegetables.jpg",
     productFullName: "Frozen Vegetables",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("4U5V6W").set({
@@ -515,8 +565,9 @@ function cmarket() {
     price: 5.99,
     imgurl: "../images/products/frozen-pizza.jpg",
     productFullName: "Frozen Pizza",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("7W8X9Y").set({
@@ -525,8 +576,9 @@ function cmarket() {
     price: 3.49,
     imgurl: "../images/products/peanut-butter.jpg",
     productFullName: "Peanut Butter",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("0X1Y2Z").set({
@@ -535,8 +587,9 @@ function cmarket() {
     price: 2.29,
     imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("3Y4Z5A").set({
@@ -545,8 +598,9 @@ function cmarket() {
     price: 2.09,
     imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 
   costcoItems.doc("6Z7A8B").set({
@@ -555,7 +609,8 @@ function cmarket() {
     price: 9.49,
     imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
-   store: "costco",
-    storelogo : "../images/storelogoshort/costcologo.png",
+    store: "costco",
+    storelogo: "../images/storelogoshort/costcologo.png",
+    keywords: ""
   });
 }

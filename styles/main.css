@@ -29,10 +29,28 @@ html, body {
     margin: auto;
     width: 100%;
 }
+
+
+    /* to make placeholder text in the search bar disappear upon clicking the form */
+input:focus::placeholder {
+    color: transparent;
+}
+
+form {
+    justify-self: center;
+    /* width: 100%; */
+    align-self: center;
+    display: grid;
+    width: 70%;
+
+}
+
 input {
     border-radius: 5px;
     border-color: #8F8F8F;
-    width: 70%;
+    width: 100%;
+    /* margin-left: 15%; */
+    height: 30px;
 }
 button {
     border-radius: 5px;
@@ -46,12 +64,12 @@ button {
     "store1 store2"
     "store3 store4";
     
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 8% 40% 8% 40%;
     grid-template-rows: repeat(2, 50%);
 
     justify-items: center;
 
-    gap: 1em;
+    gap: 2%;
 }
 
 img {
