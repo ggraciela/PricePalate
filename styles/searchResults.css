@@ -247,13 +247,15 @@ body {
   display: grid;
   /* align-items: center; */
   justify-items: center;
-  grid-template-rows: 50% 50%;
+  /* grid-template-rows: ; */
 
   padding-left: 3%;
   padding-right: 3%;
   grid-template-areas:
-    "plus"
-    "bookmark";
+    "plus";
+    /* "bookmark"; */
+
+  align-items: flex-start;
 }
 
 .counter {
@@ -313,6 +315,7 @@ body {
 
 .counter .material-symbols-outlined {
   font-size: 35px;
+  color: #6e6e6e;
   /* color: ; */
 }
 
