@@ -10,7 +10,8 @@ function wmarket() {
     productFullName: "Milk",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: "milk"
+    keywords: "milk",
+    walmart: true
   });
 
   walmartItems.doc("xY3zEf").set({
@@ -21,7 +22,7 @@ function wmarket() {
     productFullName: "Eggs",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: "egg"
+    keywords: "eggs"
   });
 
   walmartItems.doc("pQ5rGh").set({
@@ -76,7 +77,7 @@ function wmarket() {
     productFullName: "Bananas",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "banana"
   });
 
   walmartItems.doc("kC0qAr").set({
@@ -87,7 +88,7 @@ function wmarket() {
     productFullName: "Oranges",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "orange"
   });
 
   walmartItems.doc("dD1rBs").set({
@@ -98,7 +99,7 @@ function wmarket() {
     productFullName: "Lettuce",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "lettuce"
   });
 
   walmartItems.doc("lE2sCt").set({
@@ -109,7 +110,7 @@ function wmarket() {
     productFullName: "Tomatoes",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "tomato"
   });
 
   walmartItems.doc("fF3uDv").set({
@@ -120,7 +121,7 @@ function wmarket() {
     productFullName: "Carrots",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "carrot"
   });
 
   walmartItems.doc("gG4wEx").set({
@@ -131,7 +132,7 @@ function wmarket() {
     productFullName: "Chicken Breast",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "chicken"
   });
 
   walmartItems.doc("hH5xJy").set({
@@ -142,7 +143,7 @@ function wmarket() {
     productFullName: "Ground Beef",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "beef"
   });
 
   walmartItems.doc("iI6zKz").set({
@@ -153,7 +154,7 @@ function wmarket() {
     productFullName: "Fish Fillet",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "fish"
   });
 
   walmartItems.doc("jJ7AL1").set({
@@ -164,7 +165,7 @@ function wmarket() {
     productFullName: "Butter",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "butter"
   });
 
   walmartItems.doc("kK8BM2").set({
@@ -175,7 +176,7 @@ function wmarket() {
     productFullName: "Cheese",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "cheese"
   });
 
   walmartItems.doc("lL9cN3").set({
@@ -186,7 +187,7 @@ function wmarket() {
     productFullName: "Yogurt",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "yogurt"
   });
 
   walmartItems.doc("mM0dO4").set({
@@ -197,7 +198,7 @@ function wmarket() {
     productFullName: "Cereal",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "cereal"
   });
 
   walmartItems.doc("nN1eP5").set({
@@ -209,17 +210,6 @@ function wmarket() {
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "beans"
-  });
-
-  walmartItems.doc("oO2fQ6").set({
-    id: "oO2fQ6",
-    description: "High-quality canned tomatoes",
-    price: 1.49,
-    imgurl: "../images/products/tomatoes-canned.jpg",
-    productFullName: "Canned Tomatoes",
-    store: "walmart",
-    storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
   });
 
   walmartItems.doc("pP3gR7").set({
@@ -241,7 +231,7 @@ function wmarket() {
     productFullName: "Frozen Pizza",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "frozen pizza"
   });
 
   walmartItems.doc("rR5iU9").set({
@@ -252,7 +242,7 @@ function wmarket() {
     productFullName: "Peanut Butter",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "peanut butter"
   });
 
   walmartItems.doc("sS6jV0").set({
@@ -263,7 +253,7 @@ function wmarket() {
     productFullName: "Jam",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "jam"
   });
 
   walmartItems.doc("tT7kW1").set({
@@ -274,7 +264,7 @@ function wmarket() {
     productFullName: "Snack Chips",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "chips"
   });
 
   walmartItems.doc("uU8lX2").set({
@@ -285,7 +275,7 @@ function wmarket() {
     productFullName: "Coffee",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "coffee"
   });
 
   walmartItems.doc("vV9mY3").set({
@@ -296,7 +286,7 @@ function wmarket() {
     productFullName: "Tea",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "tea"
   });
 
   walmartItems.doc("wW0nZ4").set({
@@ -307,7 +297,7 @@ function wmarket() {
     productFullName: "Bottled Water",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "water"
   });
 
   walmartItems.doc("xX1oA5").set({
@@ -318,7 +308,7 @@ function wmarket() {
     productFullName: "Toilet Paper",
     store: "walmart",
     storelogo: "../images/storelogoshort/walmartlogo.png",
-    keywords: ""
+    keywords: "toilet paper"
   });
 }
 

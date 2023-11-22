@@ -157,6 +157,10 @@ body {
 
 
 /* on the right: counter or now just add and bookmark */
+.material-icons{
+  cursor: pointer;
+}
+
 .counter {
   display: grid;
   /* align-items: center; */
@@ -231,6 +235,11 @@ body {
   font-size: 35px;
   color: #6e6e6e;
   /* color: ; */
+}
+
+.filled {
+  color: #39A36A;
+  background-color: #39A36A;
 }
 
 .bookmark .material-symbols-outlined {
