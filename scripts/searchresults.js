@@ -10,18 +10,18 @@ function displayCardsDynamically(collection) {
   // alert(keyword);
 
   // var keyword = document.getElementById("search").value;
-  
+  var walmartbox = localStorage.getItem("walmartstat");
+  console.log(walmartbox + " value of walmartbox");
 
   db.collection(collection)
-    
+    .orderBy('price')
     .where('keywords', "==", keyword)
-
-    // .where('walmartbox', "==", walmartbox)
+    // .where('walmart', "==", walmartbox)
     // .where('costcobox', "==", costcobox)
     // .where('saveonfoodsbox', "==", saveonfoodsbox)
     // .where('tntbox', "==", tntbox)
 
-    // .orderBy('price')
+    // .limit(1)
     .get()   //the collection called "hikes"
     .then(allResults => {
       allResults.forEach(doc => { //iterate thru each doc
@@ -42,6 +42,7 @@ function displayCardsDynamically(collection) {
         // newcard.querySelector('.store').innerHTML = store;
         newcard.getElementById("productimage").src = imgurl; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
         newcard.getElementById("storelogo").src = storelogo; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
+        
         newcard.querySelector('button').id = 'add-' + itemid;   //guaranteed to be unique
         newcard.querySelector('button').onclick = () => additemtolist(itemid); // add event listener to the addbutton
 
@@ -61,26 +62,76 @@ function displayCardsDynamically(collection) {
 displayCardsDynamically("market");  //input param is the name of the collection
 
 
-function additemtolist() {
-  console.log("add item button clicked");
-  // if (// button was already green or clicked on before && data is already in shopping list) {
-  //   // then remove from shopping list AND make button not green again 
-  // }
-  // else {
-  //   // make button green and add it to the shopping list ( currentList )
-  // }
+function additemtolist(itemid) {
+  firebase.auth().onAuthStateChanged((user) => {
+    // var itemid = doc.data().id;
+    // Check if a user is signed in:
+    if (user) {
+      const currentUser = db.collection("users").doc(user.uid);
+      currentUser.update({
+          currentList: firebase.firestore.FieldValue.arrayUnion(itemid),
+        })
+        // Handle the front-end update to change the icon, providing visual feedback to the user that it has been clicked.
+        .then(function () {
+          console.log("product has been added into shoppinglist" + itemid);
+          var itemID = "item-" + itemid;
+          console.log(itemid);
+          //this is to change the icon of the hike that was saved to "filled"
+          document.getElementById("plusbtn").innerText = 'add_box';
+          // changebutton();
+        });
+    } 
+  });
 }
 
-// function usekeyword() {
+
+
+// document.getElementById("plusbtn").target.classList.add("filled");
+          
+// function changebutton() {
+//   let allBtns = document.querySelectorAll("plusbtn")
+
+// // For each button, register an event listener
+// allBtns.forEach(function(elem){
+
+//   elem.addEventListener("click", function(e){
+  
+//     // On click, remove the MyClass on ALL buttons
+//     allBtns.forEach(function(el){
+//       el.classList.remove("filled");
+//     });
+    
+//     // Add the class on clicked one
+//     e.target.classList.add("filled");
+    
+//     // Now pass the data-href to your iframe
+//     // let theHREFtoOpen = e.target.getAttribute("data-href")
+//     // console.log(theHREFtoOpen)
+//     //document.querySelector("#your-iframe").src = theHREFtoOpen
+//   })
+// })
+// }
+
+
+
+
+  
+// function dosearchwithenterkey() {
 //   // Get the input field
 //   var input = document.getElementById("search");
 
 //   // Execute a function when the user presses a key on the keyboard
 //   input.addEventListener("keypress", function (event) {
 //     // If the user presses the "Enter" key on the keyboard
-//     if (event.key === "Enter") {
-      
+//     if (event.key == "Enter") {
+//       dosearch();
 //     }
 //   });
 // }
 
+// function dosearch() {
+//   console.log("search button clicked");
+//   var result = document.getElementById("search").value;
+//   // alert(result);
+//   window.location.href = "searchresults.html?value=" + result;
+// }

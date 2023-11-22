@@ -8,92 +8,6 @@ html, body {
 
 
 
-/* header & searchbar */
-header {
-  background-color: #39A36A;
-  width: 100%;
-  /* justify-items: center; */
-  /* align-items: center; */
-  display: grid;
-
-  object-fit: contain;
-  grid-template-columns: 85% 15%;
-  grid-template-areas:
-    "searchbar magnifying";
-
-  position: fixed;
-  top: 0;
-
-}
-
-
-.searchbar {
-  margin: auto;
-  /* justify-self: center; */
-  height: 75px;
-  width: 80%;
-  /* align-items: center; */
-  grid-area: searchbar;
-  border-radius: 20px;
-
-  /* display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: 
-  "input"; */
-}
-
-input {
-  width: 97%;
-  margin-left: 3%;
-  margin-top: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-width: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  grid-area: input;
-  border-radius: 5px;
-}
-
-/* vertically center placeholder text */
-/* input::placeholder {
-  transform: translateY(-7px);
-  font-size: 15px;
-} */
-
-/* to make placeholder text in the search bar disappear upon clicking the form */
-input:focus::placeholder {
-  color: transparent;
-}
-
-
-.magnifying {
-  grid-area: magnifying;
-}
-
-header .material-symbols-outlined {
-  /* background-color: white; */
-  /* margin-top: 20px;
-  margin-right: 10px; */
-  /* padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 3px;
-  padding-left: 3px; */
-  height: fit-content;
-  width: fit-content;
-  padding-top: 5px;
-  /* padding-top: 15px; */
-}
-
-#searchbtn {
-  width: fit-content;
-  height: fit-content;
-  margin-top: 19px;
-  /* border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-width: 1px; */
-}
-
 /* search result & sort button */
 .top {
   display: grid;
@@ -243,6 +157,10 @@ body {
 
 
 /* on the right: counter or now just add and bookmark */
+.material-icons{
+  cursor: pointer;
+}
+
 .counter {
   display: grid;
   /* align-items: center; */
@@ -317,6 +235,11 @@ body {
   font-size: 35px;
   color: #6e6e6e;
   /* color: ; */
+}
+
+.filled {
+  color: #39A36A;
+  background-color: #39A36A;
 }
 
 .bookmark .material-symbols-outlined {
