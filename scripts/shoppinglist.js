@@ -6,31 +6,6 @@
 
 let redirectAfterSave = false;
 
-function getNameFromAuth() {
-  firebase.auth().onAuthStateChanged((user) => {
-    // Check if a user is signed in:
-    if (user) {
-      // Do something for the currently logged-in user here:
-      console.log(user.uid); //print the uid in the browser console
-      console.log(user.displayName); //print the user name in the browser console
-      userName = user.displayName;
-      const currentUser = db.collection("users").doc(user.uid);
-      const currentUserId = user.uid;
-
-      // method #1:  insert with JS
-      // document.getElementById("name-goes-here").innerText = userName;
-
-      //method #2:  insert using jquery
-      //$("#name-goes-here").text(userName); //using jquery
-
-      //method #3:  insert using querySelector
-      //document.querySelector("#name-goes-here").innerText = userName
-    } else {
-      // No user is signed in.
-    }
-  });
-}
-getNameFromAuth(); //run the function
 
 function addToList(productId) {
   firebase.auth().onAuthStateChanged((user) => {
@@ -46,7 +21,6 @@ function addToList(productId) {
           console.log("product has been added into shoppinglist" + productId);
           var itemID = "item-" + productId;
           console.log(itemID);
-          //this is to change the icon of the hike that was saved to "filled"
         });
     } else {
     }
@@ -122,10 +96,6 @@ function removeItem(itemId) {
             .then(() => {
               console.log("item has been delete for" + itemId);
               window.location.href = "shoppingb.html";
-              // var spanId = "delete-" + itemId;
-              //console.log(iconID);
-              //this is to change the icon of the hike that was saved to "filled"
-              // document.getElementById(spanId).innerText = "deleted";
             });
         } else {
           console.warn("Current list is empty or null");
@@ -218,9 +188,7 @@ function doAll(id) {
     }
   });
 }
-document.addEventListener("DOMContentLoaded", () => {
-  displayListDynamically();
-});
+
 
 function unsaveReminder(){
   firebase.auth().onAuthStateChanged((user) => {
@@ -238,5 +206,10 @@ function unsaveReminder(){
     }
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  displayListDynamically();
+});
+
 const idList = ["uU8lX2", "sS6jV0", "tT7kW1"];
 doAll("sS6jV0");
