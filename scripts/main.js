@@ -85,4 +85,9 @@ function printcheckboxvalue() {
   console.log(tntbox);
 
   localStorage.setItem("walmartstat", walmartbox);
+  localStorage.setItem("costcostat", costcobox);
+  localStorage.setItem("saveonfoodsstat", saveonfoodsbox);
+  localStorage.setItem("tntstat", tntbox);
 }
+
+printcheckboxvalue();

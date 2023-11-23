@@ -10,20 +10,28 @@ function displayCardsDynamically(collection) {
   // alert(keyword);
 
   // var keyword = document.getElementById("search").value;
-  var walmartbox = localStorage.getItem("walmartstat");
+  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
   console.log(walmartbox + " value of walmartbox");
+
+  var costcobox = (localStorage.getItem("costcostat") === 'true');
+  console.log(costcobox + " value of costcobox");
+
+  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
+  console.log(saveonfoodsbox + " value of saveonfoodsbox");
+
+  var tntbox = (localStorage.getItem("tntstat") === 'true');
+  console.log(tntbox + " value of tntbox");
 
   db.collection(collection)
     .orderBy('price')
     .where('keywords', "==", keyword)
-    // .where('walmart', "==", walmartbox)
-    // .where('costcobox', "==", costcobox)
-    // .where('saveonfoodsbox', "==", saveonfoodsbox)
-    // .where('tntbox', "==", tntbox)
-
-    // .limit(1)
+    .where('walmart', "==", walmartbox)
+    .where('costco', "==", costcobox)
+    .where('saveonfoods', "==", saveonfoodsbox)
+    .where('tnt', "==", tntbox)
     .get()   //the collection called "hikes"
     .then(allResults => {
+      // alert (allResults.size);
       allResults.forEach(doc => { //iterate thru each doc
         console.log(doc.data());
         var itemid = doc.data().id;
@@ -116,18 +124,12 @@ function additemtolist(itemid) {
 
 
   
-// function dosearchwithenterkey() {
-//   // Get the input field
-//   var input = document.getElementById("search");
-
-//   // Execute a function when the user presses a key on the keyboard
-//   input.addEventListener("keypress", function (event) {
-//     // If the user presses the "Enter" key on the keyboard
-//     if (event.key == "Enter") {
+// function dosearchwithenterkey(e) {
+//     if (e.keyCode == 13) {
+//       console.log("search bar works");
 //       dosearch();
 //     }
-//   });
-// }
+//   };
 
 // function dosearch() {
 //   console.log("search button clicked");

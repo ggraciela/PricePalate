@@ -39,8 +39,9 @@
         <header id="header">
             PricePalate
         </header>
-        <div class="greetings">Hello, <span id="name-goes-here"></span>!</div>
+        
         <div class="textprompt">
+            <div class="greetings">Hello, <span id="name-goes-here"></span> !</div>
             Please choose your supermarkets
         </div>
         <div id="options">
@@ -73,7 +74,7 @@
         <div class="textprompt">
             Please enter an item 
         </div>
-        <div id="searchbar">
+        <div id="searchbar" onkeydown="dosearchwithenterkey()">
 
             <form>
                 <input type="text" id="search" placeholder="Search.." onkeydown="enterSearch(event)">
@@ -88,6 +89,7 @@
     <script src="../scripts/firebaseAPI_BBY31.js"></script>
     <script src="../scripts/skeleton.js"></script>
     <script src="../scripts/main.js"></script>
+    <script src="../scripts/searchresults.js"></script>
 
 </body>
 
