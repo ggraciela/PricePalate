@@ -94,7 +94,7 @@ function removeItem(itemId) {
             })
             // Handle the front-end update to change the icon, providing visual feedback to the user that it has been clicked.
             .then(() => {
-              console.log("item has been delete for" + itemId);
+              console.log("item has been deleted for" + itemId);
               window.location.href = "shopping.html";
             });
         } else {

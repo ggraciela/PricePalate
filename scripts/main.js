@@ -56,6 +56,20 @@ function dosearch() {
   
 }
 
+function enterSearch(e) {
+  console.log(e.keyCode);
+  if(e.keyCode == 13) {
+    dosearch();
+  }
+}
+const conflict = document.querySelector("#search");
+conflict.addEventListener("keydown", checkEnter, false);
+
+function checkEnter(event) {
+  if(event.keyCode == 13){
+    event.preventDefault();
+  }
+}
 
 
 
