@@ -1,6 +1,6 @@
 //Database for Walmart Store
 
-function wmarket() {
+function allmarket() {
   var walmartbox = (localStorage.getItem("walmartstat") === 'true');
   var costcobox = (localStorage.getItem("costcostat") === 'true');
   var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
@@ -15,7 +15,7 @@ function wmarket() {
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -30,7 +30,7 @@ function wmarket() {
     imgurl: "../images/products/egg.jpg",
     productFullName: "Eggs",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -45,7 +45,7 @@ function wmarket() {
     imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -60,7 +60,7 @@ function wmarket() {
     imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -75,7 +75,7 @@ function wmarket() {
     imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -90,7 +90,7 @@ function wmarket() {
     imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -105,7 +105,7 @@ function wmarket() {
     imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -120,7 +120,7 @@ function wmarket() {
     imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -135,7 +135,7 @@ function wmarket() {
     imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -150,7 +150,7 @@ function wmarket() {
     imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -165,7 +165,7 @@ function wmarket() {
     imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -180,7 +180,7 @@ function wmarket() {
     imgurl: "../images/products/chickenbreast.jpg",
     productFullName: "Chicken Breast",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -195,7 +195,7 @@ function wmarket() {
     imgurl: "../images/products/groundbeef.jpg",
     productFullName: "Ground Beef",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -210,7 +210,7 @@ function wmarket() {
     imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -225,7 +225,7 @@ function wmarket() {
     imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -240,7 +240,7 @@ function wmarket() {
     imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -255,7 +255,7 @@ function wmarket() {
     imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -270,7 +270,7 @@ function wmarket() {
     imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -285,7 +285,7 @@ function wmarket() {
     imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -300,7 +300,7 @@ function wmarket() {
     imgurl: "../images/products/frozenvegetables.jpg",
     productFullName: "Frozen Vegetables",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -315,7 +315,7 @@ function wmarket() {
     imgurl: "../images/products/frozenpizza.jpg",
     productFullName: "Frozen Pizza",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -330,7 +330,7 @@ function wmarket() {
     imgurl: "../images/products/peanutbutter.jpg",
     productFullName: "Peanut Butter",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -345,7 +345,7 @@ function wmarket() {
     imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -360,7 +360,7 @@ function wmarket() {
     imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -375,7 +375,7 @@ function wmarket() {
     imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -390,7 +390,7 @@ function wmarket() {
     imgurl: "../images/products/tea.jpg",
     productFullName: "Tea",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -405,7 +405,7 @@ function wmarket() {
     imgurl: "../images/products/water.jpg",
     productFullName: "Bottled Water",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
@@ -420,24 +420,27 @@ function wmarket() {
     imgurl: "../images/products/paper.jpg",
     productFullName: "Toilet Paper",
     store: "walmart",
-    walmart: walmartbox,
+    walmart: true,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "toilet paper"
   });
-}
 
 
-//Database for Costco Store
 
-function cmarket() {
-  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
-  var costcobox = (localStorage.getItem("costcostat") === 'true');
-  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
-  var tntbox = (localStorage.getItem("tntstat") === 'true');
 
+
+
+
+
+
+
+
+
+
+  // costco
   var costcoItems = db.collection("market");
 
   costcoItems.doc("1a2b3c").set({
@@ -448,7 +451,7 @@ function cmarket() {
     productFullName: "Milk",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -463,7 +466,7 @@ function cmarket() {
     productFullName: "Eggs",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -478,7 +481,7 @@ function cmarket() {
     productFullName: "Bread",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -493,7 +496,7 @@ function cmarket() {
     productFullName: "Rice",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -508,7 +511,7 @@ function cmarket() {
     productFullName: "Pasta",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -523,7 +526,7 @@ function cmarket() {
     productFullName: "Apples",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -538,7 +541,7 @@ function cmarket() {
     productFullName: "Bananas",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -553,7 +556,7 @@ function cmarket() {
     productFullName: "Oranges",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -568,7 +571,7 @@ function cmarket() {
     productFullName: "Lettuce",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -583,7 +586,7 @@ function cmarket() {
     productFullName: "Tomatoes",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -598,7 +601,7 @@ function cmarket() {
     productFullName: "Carrots",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -613,7 +616,7 @@ function cmarket() {
     productFullName: "Chicken Breast",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -628,7 +631,7 @@ function cmarket() {
     productFullName: "Ground Beef",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -643,7 +646,7 @@ function cmarket() {
     productFullName: "Fish Fillet",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -658,7 +661,7 @@ function cmarket() {
     productFullName: "Butter",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -673,7 +676,7 @@ function cmarket() {
     productFullName: "Cheese",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -688,7 +691,7 @@ function cmarket() {
     productFullName: "Yogurt",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -703,7 +706,7 @@ function cmarket() {
     productFullName: "Cereal",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -718,7 +721,7 @@ function cmarket() {
     productFullName: "Canned Beans",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -733,7 +736,7 @@ function cmarket() {
     productFullName: "Canned Tomatoes",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -748,7 +751,7 @@ function cmarket() {
     productFullName: "Frozen Vegetables",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -763,7 +766,7 @@ function cmarket() {
     productFullName: "Frozen Pizza",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -778,7 +781,7 @@ function cmarket() {
     productFullName: "Peanut Butter",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -793,7 +796,7 @@ function cmarket() {
     productFullName: "Jam",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -808,7 +811,7 @@ function cmarket() {
     productFullName: "Snack Chips",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
@@ -823,21 +826,21 @@ function cmarket() {
     productFullName: "Coffee",
     store: "costco",
     walmart: walmartbox,
-    costco: costcobox,
+    costco: true,
     saveonfoods: saveonfoodsbox,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
     keywords: "coffee"
   });
-}
 
 
-function smarket() {
-  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
-  var costcobox = (localStorage.getItem("costcostat") === 'true');
-  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
-  var tntbox = (localStorage.getItem("tntstat") === 'true');
 
+
+
+
+
+
+  // saveonfoods
   var saveonfoodsItems = db.collection("market");
 
   saveonfoodsItems.doc("xxxxxx").set({
@@ -846,22 +849,24 @@ function smarket() {
     price: 2.49,
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
-    store: "costco",
+    store: "saveonfoods",
     walmart: walmartbox,
     costco: costcobox,
-    saveonfoods: saveonfoodsbox,
+    saveonfoods: true,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/saveonfoodslogo.png",
     keywords: "milk"
   });
-}
 
-function tmarket() {
-  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
-  var costcobox = (localStorage.getItem("costcostat") === 'true');
-  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
-  var tntbox = (localStorage.getItem("tntstat") === 'true');
 
+
+
+
+
+
+
+
+  // t&t
   var tntItems = db.collection("market");
 
   tntItems.doc("yyyyyy").set({
@@ -870,12 +875,13 @@ function tmarket() {
     price: 2.49,
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
-    store: "costco",
+    store: "t&t",
     walmart: walmartbox,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
+    tnt: true,
     storelogo: "../images/storelogoshort/tntlonglogo.png",
     keywords: "milk"
   });
+
 }
