@@ -52,8 +52,6 @@ function dosearch() {
   var result = document.getElementById("search").value;
   // alert(result);
   window.location.href = "searchresults.html?value=" + result;
-
-  
 }
 
 
