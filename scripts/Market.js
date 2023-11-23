@@ -1,5 +1,11 @@
 //Database for Walmart Store
+
 function wmarket() {
+  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
+  var costcobox = (localStorage.getItem("costcostat") === 'true');
+  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
+  var tntbox = (localStorage.getItem("tntstat") === 'true');
+
   var walmartItems = db.collection("market");
 
   walmartItems.doc("aB1cD2").set({
@@ -9,18 +15,25 @@ function wmarket() {
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "milk",
-    walmart: true
   });
 
   walmartItems.doc("xY3zEf").set({
     id: "xY3zEf",
     description: "Farm-fresh eggs",
     price: 1.99,
-    imgurl: "../images/products/eggs.jpg",
+    imgurl: "../images/products/egg.jpg",
     productFullName: "Eggs",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "eggs"
   });
@@ -32,6 +45,10 @@ function wmarket() {
     imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "bread"
   });
@@ -43,6 +60,10 @@ function wmarket() {
     imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "rice"
   });
@@ -54,6 +75,10 @@ function wmarket() {
     imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "pasta"
   });
@@ -65,6 +90,10 @@ function wmarket() {
     imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "apple"
   });
@@ -76,6 +105,10 @@ function wmarket() {
     imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "banana"
   });
@@ -87,6 +120,10 @@ function wmarket() {
     imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "orange"
   });
@@ -98,6 +135,10 @@ function wmarket() {
     imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "lettuce"
   });
@@ -109,6 +150,10 @@ function wmarket() {
     imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "tomato"
   });
@@ -120,6 +165,10 @@ function wmarket() {
     imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "carrot"
   });
@@ -128,9 +177,13 @@ function wmarket() {
     id: "gG4wEx",
     description: "Fresh chicken breast",
     price: 5.99,
-    imgurl: "../images/products/chicken.jpg",
+    imgurl: "../images/products/chickenbreast.jpg",
     productFullName: "Chicken Breast",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "chicken"
   });
@@ -139,9 +192,13 @@ function wmarket() {
     id: "hH5xJy",
     description: "Lean ground beef",
     price: 4.49,
-    imgurl: "../images/products/beef.jpg",
+    imgurl: "../images/products/groundbeef.jpg",
     productFullName: "Ground Beef",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "beef"
   });
@@ -153,6 +210,10 @@ function wmarket() {
     imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "fish"
   });
@@ -164,6 +225,10 @@ function wmarket() {
     imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "butter"
   });
@@ -175,6 +240,10 @@ function wmarket() {
     imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "cheese"
   });
@@ -186,6 +255,10 @@ function wmarket() {
     imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "yogurt"
   });
@@ -197,6 +270,10 @@ function wmarket() {
     imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "cereal"
   });
@@ -208,6 +285,10 @@ function wmarket() {
     imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "beans"
   });
@@ -216,9 +297,13 @@ function wmarket() {
     id: "pP3gR7",
     description: "Variety of frozen vegetables",
     price: 2.79,
-    imgurl: "../images/products/frozen-vegetables.jpg",
+    imgurl: "../images/products/frozenvegetables.jpg",
     productFullName: "Frozen Vegetables",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "vegetable"
   });
@@ -227,9 +312,13 @@ function wmarket() {
     id: "qQ4hS8",
     description: "Delicious frozen pizza",
     price: 4.99,
-    imgurl: "../images/products/frozen-pizza.jpg",
+    imgurl: "../images/products/frozenpizza.jpg",
     productFullName: "Frozen Pizza",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "frozen pizza"
   });
@@ -238,9 +327,13 @@ function wmarket() {
     id: "rR5iU9",
     description: "Creamy peanut butter",
     price: 3.29,
-    imgurl: "../images/products/peanut-butter.jpg",
+    imgurl: "../images/products/peanutbutter.jpg",
     productFullName: "Peanut Butter",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "peanut butter"
   });
@@ -252,6 +345,10 @@ function wmarket() {
     imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "jam"
   });
@@ -263,6 +360,10 @@ function wmarket() {
     imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "chips"
   });
@@ -274,6 +375,10 @@ function wmarket() {
     imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "coffee"
   });
@@ -285,6 +390,10 @@ function wmarket() {
     imgurl: "../images/products/tea.jpg",
     productFullName: "Tea",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "tea"
   });
@@ -293,9 +402,13 @@ function wmarket() {
     id: "wW0nZ4",
     description: "Refreshing bottled water",
     price: 0.99,
-    imgurl: "../images/products/bottled-water.jpg",
+    imgurl: "../images/products/water.jpg",
     productFullName: "Bottled Water",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "water"
   });
@@ -304,9 +417,13 @@ function wmarket() {
     id: "xX1oA5",
     description: "Soft and gentle toilet paper",
     price: 5.99,
-    imgurl: "../images/products/toilet-paper-soft.jpg",
+    imgurl: "../images/products/paper.jpg",
     productFullName: "Toilet Paper",
     store: "walmart",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/walmartlogo.png",
     keywords: "toilet paper"
   });
@@ -316,6 +433,11 @@ function wmarket() {
 //Database for Costco Store
 
 function cmarket() {
+  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
+  var costcobox = (localStorage.getItem("costcostat") === 'true');
+  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
+  var tntbox = (localStorage.getItem("tntstat") === 'true');
+
   var costcoItems = db.collection("market");
 
   costcoItems.doc("1a2b3c").set({
@@ -325,19 +447,27 @@ function cmarket() {
     imgurl: "../images/products/milk.jpg",
     productFullName: "Milk",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "milk"
   });
 
   costcoItems.doc("4e5f6g").set({
     id: "4e5f6g",
     description: "Farm-fresh eggs",
     price: 2.29,
-    imgurl: "../images/products/eggs.jpg",
+    imgurl: "../images/products/egg.jpg",
     productFullName: "Eggs",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "eggs"
   });
 
   costcoItems.doc("7h8i9j").set({
@@ -347,8 +477,12 @@ function cmarket() {
     imgurl: "../images/products/bread.jpg",
     productFullName: "Bread",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "bread"
   });
 
   costcoItems.doc("k0l1m2").set({
@@ -358,8 +492,12 @@ function cmarket() {
     imgurl: "../images/products/rice.jpg",
     productFullName: "Rice",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "rice"
   });
 
   costcoItems.doc("3n4o5p").set({
@@ -369,8 +507,12 @@ function cmarket() {
     imgurl: "../images/products/pasta.jpg",
     productFullName: "Pasta",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "pasta"
   });
 
   costcoItems.doc("6q7r8s").set({
@@ -380,8 +522,12 @@ function cmarket() {
     imgurl: "../images/products/apples.jpg",
     productFullName: "Apples",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "apple"
   });
 
   costcoItems.doc("9t0u1v").set({
@@ -391,8 +537,12 @@ function cmarket() {
     imgurl: "../images/products/bananas.jpg",
     productFullName: "Bananas",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "banana"
   });
 
   costcoItems.doc("2w3x4y").set({
@@ -402,8 +552,12 @@ function cmarket() {
     imgurl: "../images/products/oranges.jpg",
     productFullName: "Oranges",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "orange"
   });
 
   costcoItems.doc("5z6A7B").set({
@@ -413,8 +567,12 @@ function cmarket() {
     imgurl: "../images/products/lettuce.jpg",
     productFullName: "Lettuce",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "lettuce"
   });
 
   costcoItems.doc("8C9d0E").set({
@@ -424,8 +582,12 @@ function cmarket() {
     imgurl: "../images/products/tomatoes.jpg",
     productFullName: "Tomatoes",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "tomato"
   });
 
   costcoItems.doc("1E2F3G").set({
@@ -435,30 +597,42 @@ function cmarket() {
     imgurl: "../images/products/carrots.jpg",
     productFullName: "Carrots",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "carrot"
   });
 
   costcoItems.doc("4G5H6I").set({
     id: "4G5H6I",
     description: "Fresh chicken breast",
     price: 6.49,
-    imgurl: "../images/products/chicken.jpg",
+    imgurl: "../images/products/chickenbreast.jpg",
     productFullName: "Chicken Breast",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "chicken"
   });
 
   costcoItems.doc("7H8I9J").set({
     id: "7H8I9J",
     description: "Lean ground beef",
     price: 4.79,
-    imgurl: "../images/products/beef.jpg",
+    imgurl: "../images/products/groundbeef.jpg",
     productFullName: "Ground Beef",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "beef"
   });
 
   costcoItems.doc("0I1J2K").set({
@@ -468,8 +642,12 @@ function cmarket() {
     imgurl: "../images/products/fish.jpg",
     productFullName: "Fish Fillet",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "fish"
   });
 
   costcoItems.doc("3K4L5M").set({
@@ -479,8 +657,12 @@ function cmarket() {
     imgurl: "../images/products/butter.jpg",
     productFullName: "Butter",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "butter"
   });
 
   costcoItems.doc("6M7N8O").set({
@@ -490,8 +672,12 @@ function cmarket() {
     imgurl: "../images/products/cheese.jpg",
     productFullName: "Cheese",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "cheese"
   });
 
   costcoItems.doc("9N0O1P").set({
@@ -501,8 +687,12 @@ function cmarket() {
     imgurl: "../images/products/yogurt.jpg",
     productFullName: "Yogurt",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "yogurt"
   });
 
   costcoItems.doc("2O3P4Q").set({
@@ -512,8 +702,12 @@ function cmarket() {
     imgurl: "../images/products/cereal.jpg",
     productFullName: "Cereal",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "cereal"
   });
 
   costcoItems.doc("5P6Q7R").set({
@@ -523,52 +717,72 @@ function cmarket() {
     imgurl: "../images/products/beans.jpg",
     productFullName: "Canned Beans",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "beans"
   });
 
   costcoItems.doc("8R9S0T").set({
     id: "8R9S0T",
     description: "High-quality canned tomatoes",
     price: 1.99,
-    imgurl: "../images/products/tomatoes-canned.jpg",
+    imgurl: "../images/products/cannedtomatoes.jpg",
     productFullName: "Canned Tomatoes",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "tomato"
   });
 
   costcoItems.doc("1S2T3U").set({
     id: "1S2T3U",
     description: "Variety of frozen vegetables",
     price: 2.59,
-    imgurl: "../images/products/frozen-vegetables.jpg",
+    imgurl: "../images/products/frozenvegetables.jpg",
     productFullName: "Frozen Vegetables",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "vegetable"
   });
 
   costcoItems.doc("4U5V6W").set({
     id: "4U5V6W",
     description: "Delicious frozen pizza",
     price: 5.99,
-    imgurl: "../images/products/frozen-pizza.jpg",
+    imgurl: "../images/products/frozenpizza.jpg",
     productFullName: "Frozen Pizza",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "pizza"
   });
 
   costcoItems.doc("7W8X9Y").set({
     id: "7W8X9Y",
     description: "Creamy peanut butter",
     price: 3.49,
-    imgurl: "../images/products/peanut-butter.jpg",
+    imgurl: "../images/products/peanutbutter.jpg",
     productFullName: "Peanut Butter",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "peanut butter"
   });
 
   costcoItems.doc("0X1Y2Z").set({
@@ -578,8 +792,12 @@ function cmarket() {
     imgurl: "../images/products/jam.jpg",
     productFullName: "Jam",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "jam"
   });
 
   costcoItems.doc("3Y4Z5A").set({
@@ -589,8 +807,12 @@ function cmarket() {
     imgurl: "../images/products/chips.jpg",
     productFullName: "Snack Chips",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "chips"
   });
 
   costcoItems.doc("6Z7A8B").set({
@@ -600,7 +822,60 @@ function cmarket() {
     imgurl: "../images/products/coffee.jpg",
     productFullName: "Coffee",
     store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: ""
+    keywords: "coffee"
+  });
+}
+
+
+function smarket() {
+  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
+  var costcobox = (localStorage.getItem("costcostat") === 'true');
+  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
+  var tntbox = (localStorage.getItem("tntstat") === 'true');
+
+  var saveonfoodsItems = db.collection("market");
+
+  saveonfoodsItems.doc("xxxxxx").set({
+    id: "xxxxxx",
+    description: "Fresh and nutritious milk",
+    price: 2.49,
+    imgurl: "../images/products/milk.jpg",
+    productFullName: "Milk",
+    store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
+    storelogo: "../images/storelogoshort/saveonfoodslogo.png",
+    keywords: "milk"
+  });
+}
+
+function tmarket() {
+  var walmartbox = (localStorage.getItem("walmartstat") === 'true');
+  var costcobox = (localStorage.getItem("costcostat") === 'true');
+  var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
+  var tntbox = (localStorage.getItem("tntstat") === 'true');
+
+  var tntItems = db.collection("market");
+
+  tntItems.doc("yyyyyy").set({
+    id: "yyyyyy",
+    description: "Fresh and nutritious milk",
+    price: 2.49,
+    imgurl: "../images/products/milk.jpg",
+    productFullName: "Milk",
+    store: "costco",
+    walmart: walmartbox,
+    costco: costcobox,
+    saveonfoods: saveonfoodsbox,
+    tnt: tntbox,
+    storelogo: "../images/storelogoshort/tntlonglogo.png",
+    keywords: "milk"
   });
 }
