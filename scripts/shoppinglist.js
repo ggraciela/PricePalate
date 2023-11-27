@@ -65,7 +65,7 @@ function displayListDynamically() {
             });
           });
         } else {
-          
+          window.location.href = "main.html";
           
           
         }
@@ -95,7 +95,9 @@ function removeItem(itemId) {
             // Handle the front-end update to change the icon, providing visual feedback to the user that it has been clicked.
             .then(() => {
               console.log("item has been deleted for" + itemId);
-              window.location.href = "shopping.html";
+              deleteMessage(itemId);
+              
+              // window.location.href = "shopping.html";
             });
         } else {
           console.warn("Current list is empty or null");
@@ -156,7 +158,10 @@ function saveList() {
         });
       })
       .then(()=>{
-        window.location.href = "bookmarks.html";
+        saveMessage();
+        // alert("Your list has been saved.");
+        
+        // window.location.href = "bookmarks.html";
       });
     } else {
       console.log("Not sign in yet");
@@ -164,6 +169,47 @@ function saveList() {
   });
   
 }
+
+function saveMessage(){
+  var messageDiv = document.getElementById("message");
+  var paragraph = document.createElement("p");
+  
+  paragraph.innerHTML = 'Your list has been saved <i class="fa fa-check" aria-hidden="true"></i>';
+  messageDiv.appendChild(paragraph);
+  messageDiv.style.display = "block";
+    setTimeout(function () {
+      messageDiv.style.display = "none";
+    }, 5000);
+}
+
+function deleteMessage(itemId){
+  var messageDiv = document.getElementById("message");
+  var paragraph = document.createElement("p");
+  
+  paragraph.innerHTML = 'Item is deleted, undo ?';
+  messageDiv.appendChild(paragraph);
+  // messageDiv.style.display = "block";
+  messageDiv.style.cursor = "pointer";
+    setTimeout(function () {
+      // messageDiv.style.display = "none";
+      messageDiv.innerHTML = "";
+    }, 7000);
+
+  function handleUndo() {
+    messageDiv.style.cursor = "auto";
+
+    messageDiv.innerHTML = "";
+
+    // Perform undo action (addToList(itemId))
+    addToList(itemId);
+    // Remove the event listener after it's used
+    messageDiv.removeEventListener("click", handleUndo);
+  }
+  // Add event listener for the undo action
+  messageDiv.addEventListener("click", handleUndo);
+}
+
+
 
 function doAll(id) {
   const shoppinglist = [];
