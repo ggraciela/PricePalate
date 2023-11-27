@@ -3,11 +3,16 @@
 // and retrieves the "saved" array (of bookmarks) 
 // and dynamically displays them in the gallery
 //----------------------------------------------------------
+// if (firebase.auth().currentUser !== null) 
+//         console.log("user id: " + firebase.auth().currentUser.uid);
+// const currentUser = firebase.auth().currentUser.uid;
+
 function getBookmarks(userId) {
+  console.log(userId);
     db.collection("users").doc(userId).get()
         .then(userDoc => {
 					  // Get the Array of bookmarks
-            let bookmarks = userDoc.data().historyList;
+          let bookmarks = userDoc.data().historyList;
 						// Get pointer the new card template
           let newcardTemplate = document.getElementById("pastListTemplate");
 						// Iterate through the ARRAY of bookmarked hikes (document ID's)
@@ -33,14 +38,16 @@ function getBookmarks(userId) {
 getBookmarks("yXsEZFc7kTdbuu3cePxcLdG9CBH3");
 
 function useList(historyListID) {
-  db.collection("users").doc(historyListID).get().then(userDoc => {
-    console.log(db.collection("users").doc(historyListID).get());
-    if (confirm("Press a button!")) {
-      console.log("You" + historyListID);
+  firebase.auth().onAuthStateChanged((user) => {
+    // Check if a user is signed in:
+    if (user) {
+      const currentUser = db.collection("users").doc(user.uid);
+      currentUser
+      let temp = db.collection("users").doc(user.uid).collection("historyList").doc(historyListID);
+      console.log(temp);
     } else {
-      txt = "You pressed Cancel!";
     }
-  })
+  });
 }
 function deleteList(historyListID) {
     if (confirm("Press a button!")) {
