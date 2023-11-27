@@ -64,8 +64,13 @@ body {
   
 }
 
-
-
+@media only screen and (min-width: 800px){ 
+  .allresults {
+    grid-area: allresults;
+    grid-template-columns: repeat(2, 45%);
+    grid-auto-rows: 25%;
+  }
+}
 
 /* results */
 .allresults {
