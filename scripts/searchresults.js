@@ -2,16 +2,24 @@
 // Input parameter is a string representing the collection we are reading from
 //------------------------------------------------------------------------------
 function displayCardsDynamically(collection) {
+  allmarket();
   var cardTemplate = document.getElementById("searchresulttemplate"); // Retrieve the HTML element with the ID "hikeCardTemplate" and store it in the cardTemplate variable. 
   // alert(cardTemplate);
   
+  // to match search result with the keyword
   let params = new URL(window.location.href); // Get the URL from the search bar
   let keyword = params.searchParams.get("value");
   // alert(keyword);
 
+  
+
+
   // var keyword = document.getElementById("search").value;
+
+
   var walmartbox = (localStorage.getItem("walmartstat") === 'true');
   console.log(walmartbox + " value of walmartbox");
+
 
   var costcobox = (localStorage.getItem("costcostat") === 'true');
   console.log(costcobox + " value of costcobox");
@@ -21,6 +29,15 @@ function displayCardsDynamically(collection) {
 
   var tntbox = (localStorage.getItem("tntstat") === 'true');
   console.log(tntbox + " value of tntbox");
+
+
+
+  // trying to parse stored value as a string
+  let result = JSON.parse(localStorage.getItem('walmartstat'));
+  // console.log(walmartstat + " is the value of walmartstat stored in local storage")
+  // console.log(result + " is the value of 'result' stored in local storage")
+
+
 
   db.collection(collection)
     .orderBy('price')
