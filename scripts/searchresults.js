@@ -49,38 +49,38 @@ function displayCardsDynamically(collection) {
     .get()   //the collection called "hikes"
     .then(allResults => {
       // alert (allResults.size);
-      allResults.forEach(doc => { //iterate thru each doc
-        console.log(doc.data());
-        var itemid = doc.data().id;
-        var imgurl = doc.data().imgurl;
-        var itemname = doc.data().productFullName;
-        var detail = doc.data().description;
-        var price = doc.data().price;
-        var store = doc.data().store;
-        var storelogo = doc.data().storelogo;
-        let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
+      if(allResults.size < 1){
+        document.getElementById('allresults').innerHTML = "<br><br><br><br><br><br><br><br><br>No results";
+        document.getElementById('allresults').style.textAlign = "center";
+        document.getElementById('allresults').style.margin = "auto";
+      }
+      else {
+        allResults.forEach(doc => { //iterate thru each doc
+          console.log(doc.data());
+          var itemid = doc.data().id;
+          var imgurl = doc.data().imgurl;
+          var itemname = doc.data().productFullName;
+          var detail = doc.data().description;
+          var price = doc.data().price;
+          var store = doc.data().store;
+          var storelogo = doc.data().storelogo;
+          let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
 
-        //update title and text and image
-        newcard.querySelector('.price').innerHTML = "$" + price;
-        newcard.querySelector('.item').innerHTML = itemname;
-        newcard.querySelector('.detail').innerHTML = detail;
-        // newcard.querySelector('.store').innerHTML = store;
-        newcard.getElementById("productimage").src = imgurl; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
-        newcard.getElementById("storelogo").src = storelogo; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
-        
-        newcard.querySelector('button').id = 'add-' + itemid;   //guaranteed to be unique
-        newcard.querySelector('button').onclick = () => additemtolist(itemid); // add event listener to the addbutton
+          //update title and text and image
+          newcard.querySelector('.price').innerHTML = "$" + price;
+          newcard.querySelector('.item').innerHTML = itemname;
+          newcard.querySelector('.detail').innerHTML = detail;
+          // newcard.querySelector('.store').innerHTML = store;
+          newcard.getElementById("productimage").src = imgurl; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
+          newcard.getElementById("storelogo").src = storelogo; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
+          
+          newcard.querySelector('button').id = 'add-' + itemid;   //guaranteed to be unique
+          newcard.querySelector('button').onclick = () => additemtolist(itemid); // add event listener to the addbutton
 
-        //Optional: give unique ids to all elements for future use
-        // newcard.querySelector('.card-title').setAttribute("id", "ctitle" + i);
-        // newcard.querySelector('.card-text').setAttribute("id", "ctext" + i);
-        // newcard.querySelector('.card-image').setAttribute("id", "cimage" + i);
-
-        //attach to gallery, Example: "hikes-go-here"
-        document.getElementById('allresults').appendChild(newcard);
-
-        //i++;   //Optional: iterate variable to serve as unique ID
-      })
+          document.getElementById('allresults').appendChild(newcard);
+          
+        })
+      }
     })
 }
 
