@@ -103,10 +103,16 @@ function additemtolist(itemid) {
 
           //this is to change the icon of the hike that was saved to "filled"
 
-          // document.getElementById("add-" + itemid).innerHTML = 'add_box';
+          // document.getElementById("add-" + itemid ).innerHTML = 'add_box'; 
+          // document.getElementById("add-" + itemid).children[0].innerHTML = 'add_box'; 
+          document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;"; 
+          document.getElementById("add-" + itemid).children[0].style.color = "#39A36A"; 
+
+
+          
           // document.getElementById("add-" + itemid).style. = "#39A36A";
           // document.getElementById("plusbtn").classList.add(""); 
-          document.getElementById("plusbtn").innerHTML = "add_box"; 
+          // document.getElementById("plusbtn").innerHTML = "add_box"; 
 
           // document.getElementById("add-" + itemid).style.setProperty('font-variation-settings', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
           // document.getElementById("add-" + itemid).style.setProperty('--variation', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
