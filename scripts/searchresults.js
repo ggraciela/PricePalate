@@ -18,17 +18,16 @@ function displayCardsDynamically(collection) {
 
 
   var walmartbox = (localStorage.getItem("walmartstat") === 'true');
-  console.log(walmartbox + " value of walmartbox");
-
-
+  // console.log(walmartbox + " value of walmartbox");
+  
   var costcobox = (localStorage.getItem("costcostat") === 'true');
-  console.log(costcobox + " value of costcobox");
+  // console.log(costcobox + " value of costcobox");
 
   var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
-  console.log(saveonfoodsbox + " value of saveonfoodsbox");
+  // console.log(saveonfoodsbox + " value of saveonfoodsbox");
 
   var tntbox = (localStorage.getItem("tntstat") === 'true');
-  console.log(tntbox + " value of tntbox");
+  // console.log(tntbox + " value of tntbox");
 
 
 
@@ -106,7 +105,7 @@ function additemtolist(itemid) {
 
           // document.getElementById("add-" + itemid).innerHTML = 'add_box';
           // document.getElementById("add-" + itemid).style. = "#39A36A";
-          document.getElementById("plusbtn").classList.add(""); 
+          // document.getElementById("plusbtn").classList.add(""); 
           document.getElementById("plusbtn").innerHTML = "add_box"; 
 
           // document.getElementById("add-" + itemid).style.setProperty('font-variation-settings', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
