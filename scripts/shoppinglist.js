@@ -212,30 +212,8 @@ function deleteMessage(itemId){
   messageDiv.addEventListener("click", handleUndo);
 }
 
+function notSuccessSave(){
 
-
-function doAll(id) {
-  const shoppinglist = [];
-  firebase.auth().onAuthStateChanged((user) => {
-    // Check if a user is signed in:
-    if (user) {
-      productDb = db
-        .collection("market")
-        .doc(id)
-        .onSnapshot((productDoc) => {
-          console.log(
-            "current document data: " + productDoc.data().productFullName
-          );
-          shoppinglist.push(productDoc.data());
-
-          // addToList(productDoc.data().id)
-
-          // displayListDynamically(user.uid);
-        });
-    } else {
-      console.log("Not sign in yet");
-    }
-  });
 }
 
 
@@ -260,5 +238,4 @@ document.addEventListener("DOMContentLoaded", () => {
   displayListDynamically();
 });
 
-const idList = ["uU8lX2", "sS6jV0", "tT7kW1"];
-doAll("sS6jV0");
+
