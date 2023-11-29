@@ -65,7 +65,9 @@ function displayListDynamically() {
             });
           });
         } else {
-          window.location.href = "main.html";
+          if(!redirectAfterSave){
+            window.location.href = "shoppingb.html";
+          }
           
           
         }
@@ -78,6 +80,7 @@ function displayListDynamically() {
 }
 
 function removeItem(itemId) {
+  redirectAfterSave = true;
   firebase.auth().onAuthStateChanged((user) => {
     // Check if a user is signed in:
     if (user) {
