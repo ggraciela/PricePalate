@@ -101,8 +101,18 @@ function additemtolist(itemid) {
           console.log("product has been added into shoppinglist" + itemid);
           var itemID = "item-" + itemid;
           console.log(itemid);
+
           //this is to change the icon of the hike that was saved to "filled"
-          document.getElementById("plusbtn").innerText = 'add_box';
+
+          // document.getElementById("add-" + itemid).innerHTML = 'add_box';
+          // document.getElementById("add-" + itemid).style. = "#39A36A";
+          document.getElementById("plusbtn").classList.add(""); 
+          document.getElementById("plusbtn").innerHTML = "add_box"; 
+
+          // document.getElementById("add-" + itemid).style.setProperty('font-variation-settings', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
+          // document.getElementById("add-" + itemid).style.setProperty('--variation', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
+
+
           // changebutton();
         });
     } 
