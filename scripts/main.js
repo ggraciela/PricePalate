@@ -55,7 +55,7 @@ function dosearch() {
   var result = document.getElementById("search").value;
   // alert(allResults);
 
-  displayCardsDynamically("market");
+  // displayCardsDynamically("market");
     window.location.href = "searchresults.html?value=" + result;
 }
 
@@ -103,7 +103,7 @@ function printcheckboxvalue() {
   // localStorage.setItem('walmartstat', JSON.stringify(walmartbox));
 
 
-
+  // if no checkboxes are ticked, all checkboxes will have the value set to be ticked so that it shows all matching data from all the stores
   if (walmartbox === false && costcobox === false && saveonfoodsbox === false && tntbox === false) {
     localStorage.setItem("walmartstat", true);
     localStorage.setItem("costcostat", true);
