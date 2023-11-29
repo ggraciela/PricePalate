@@ -87,7 +87,7 @@ function allmarket() {
     id: "mZ8aNm",
     description: "Sweet and crunchy apples",
     price: 0.99,
-    imgurl: "../images/products/apples.jpg",
+    imgurl: "../images/products/applesw.png",
     productFullName: "Apples",
     store: "walmart",
     walmart: true,
@@ -522,7 +522,7 @@ function allmarket() {
     id: "6q7r8s",
     description: "Sweet and crunchy apples",
     price: 1.19,
-    imgurl: "../images/products/apples.jpg",
+    imgurl: "../images/products/applesc.jpg",
     productFullName: "Apples",
     store: "costco",
     walmart: walmartbox,
@@ -845,17 +845,17 @@ function allmarket() {
 
   saveonfoodsItems.doc("xxxxxx").set({
     id: "xxxxxx",
-    description: "Fresh and nutritious milk",
-    price: 2.49,
-    imgurl: "../images/products/milk.jpg",
-    productFullName: "Milk",
+    description: "Green and sour",
+    price: 1.35,
+    imgurl: "../images/products/appless.png",
+    productFullName: "Green Apples",
     store: "saveonfoods",
     walmart: walmartbox,
     costco: costcobox,
     saveonfoods: true,
     tnt: tntbox,
     storelogo: "../images/storelogoshort/saveonfoodslogo.png",
-    keywords: "milk"
+    keywords: "apple"
   });
 
 
@@ -871,17 +871,17 @@ function allmarket() {
 
   tntItems.doc("yyyyyy").set({
     id: "yyyyyy",
-    description: "Fresh and nutritious milk",
-    price: 2.49,
-    imgurl: "../images/products/milk.jpg",
-    productFullName: "Milk",
+    description: "Sweet and crunchy apples",
+    price: 1.55,
+    imgurl: "../images/products/applest.png",
+    productFullName: "Apples",
     store: "t&t",
     walmart: walmartbox,
     costco: costcobox,
     saveonfoods: saveonfoodsbox,
     tnt: true,
     storelogo: "../images/storelogoshort/tntlonglogo.png",
-    keywords: "milk"
+    keywords: "apple"
   });
 
 }

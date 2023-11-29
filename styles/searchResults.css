@@ -234,6 +234,9 @@ body {
   font-size: 17px;
 }
 
+button {
+  cursor: pointer;
+}
 
 .counter .material-symbols-outlined {
   font-size: 35px;

@@ -58,9 +58,13 @@ input {
     width: 100%;
     /* margin-left: 15%; */
     height: 30px;
+    padding-left: 15px;
+    border-width: 1px;
 }
+
 button {
     border-radius: 5px;
+    border-width: 1px;
 }
 #options {
     margin: auto;
@@ -98,6 +102,9 @@ img {
     box-shadow: 0px 5px 19px 3px #39A36A;
 }
 
+#walmartcb, #costcocb, #saveonfoodscb, #tntcb, #searchbtn{
+    cursor: pointer;
+}
 
 #store1 {
     grid-area: store1;
