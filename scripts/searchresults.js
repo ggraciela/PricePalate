@@ -1,41 +1,16 @@
-//------------------------------------------------------------------------------
-// Input parameter is a string representing the collection we are reading from
-//------------------------------------------------------------------------------
 function displayCardsDynamically(collection) {
   allmarket();
-  var cardTemplate = document.getElementById("searchresulttemplate"); // Retrieve the HTML element with the ID "hikeCardTemplate" and store it in the cardTemplate variable. 
-  // alert(cardTemplate);
+  var cardTemplate = document.getElementById("searchresulttemplate");
   
   // to match search result with the keyword
   let params = new URL(window.location.href); // Get the URL from the search bar
   let keyword = params.searchParams.get("value");
-  // alert(keyword);
-
-  
-
-
-  // var keyword = document.getElementById("search").value;
-
-
+ 
+  // to get value of checkboxes
   var walmartbox = (localStorage.getItem("walmartstat") === 'true');
-  // console.log(walmartbox + " value of walmartbox");
-  
   var costcobox = (localStorage.getItem("costcostat") === 'true');
-  // console.log(costcobox + " value of costcobox");
-
   var saveonfoodsbox = (localStorage.getItem("saveonfoodsstat") === 'true');
-  // console.log(saveonfoodsbox + " value of saveonfoodsbox");
-
   var tntbox = (localStorage.getItem("tntstat") === 'true');
-  // console.log(tntbox + " value of tntbox");
-
-
-
-  // trying to parse stored value as a string
-  let result = JSON.parse(localStorage.getItem('walmartstat'));
-  // console.log(walmartstat + " is the value of walmartstat stored in local storage")
-  // console.log(result + " is the value of 'result' stored in local storage")
-
 
 
   db.collection(collection)
@@ -45,9 +20,8 @@ function displayCardsDynamically(collection) {
     .where('costco', "==", costcobox)
     .where('saveonfoods', "==", saveonfoodsbox)
     .where('tnt', "==", tntbox)
-    .get()   //the collection called "hikes"
+    .get()   //the collection 
     .then(allResults => {
-      // alert (allResults.size);
       if(allResults.size < 1){
         document.getElementById('allresults').innerHTML = "<br><br><br><br><br><br><br><br><br>No results";
         document.getElementById('allresults').style.textAlign = "center";
@@ -55,7 +29,7 @@ function displayCardsDynamically(collection) {
       }
       else {
         allResults.forEach(doc => { //iterate thru each doc
-          console.log(doc.data());
+          // console.log(doc.data());
           var itemid = doc.data().id;
           var imgurl = doc.data().imgurl;
           var itemname = doc.data().productFullName;
@@ -65,17 +39,17 @@ function displayCardsDynamically(collection) {
           var storelogo = doc.data().storelogo;
           let newcard = cardTemplate.content.cloneNode(true); // Clone the HTML template to create a new card (newcard) that will be filled with Firestore data.
 
-          //update title and text and image
+          // entering the data to the html
           newcard.querySelector('.price').innerHTML = "$" + price;
           newcard.querySelector('.item').innerHTML = itemname;
           newcard.querySelector('.detail').innerHTML = detail;
-          // newcard.querySelector('.store').innerHTML = store;
-          newcard.getElementById("productimage").src = imgurl; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
-          newcard.getElementById("storelogo").src = storelogo; // newcard.querySelector('.card-image').src = `./images/${hikeCode}.jpg`; // Example: NV01.jpg
+          newcard.getElementById("productimage").src = imgurl; 
+          newcard.getElementById("storelogo").src = storelogo;
           
-          newcard.querySelector('button').id = 'add-' + itemid;   //guaranteed to be unique
-          newcard.querySelector('button').onclick = () => additemtolist(itemid); // add event listener to the addbutton
+          newcard.querySelector('button').id = 'add-' + itemid;  
+          newcard.querySelector('button').onclick = () => additemtolist(itemid); 
 
+          // adding the new card
           document.getElementById('allresults').appendChild(newcard);
           
         })
@@ -84,6 +58,7 @@ function displayCardsDynamically(collection) {
 }
 
 displayCardsDynamically("market");  //input param is the name of the collection
+
 
 
 function additemtolist(itemid) {
@@ -108,8 +83,6 @@ function additemtolist(itemid) {
           document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;"; 
           document.getElementById("add-" + itemid).children[0].style.color = "#39A36A"; 
 
-
-          
           // document.getElementById("add-" + itemid).style. = "#39A36A";
           // document.getElementById("plusbtn").classList.add(""); 
           // document.getElementById("plusbtn").innerHTML = "add_box"; 
@@ -118,7 +91,6 @@ function additemtolist(itemid) {
           // document.getElementById("add-" + itemid).style.setProperty('--variation', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
 
 
-          // changebutton();
         });
     } 
   });
@@ -154,20 +126,13 @@ function additemtolist(itemid) {
 
 
 
-
-  
-// function dosearchwithenterkey(e) {
-//     if (e.keyCode == 13) {
-//       console.log("search bar works");
-//       dosearch();
+// function checkifalreadyclicked(){
+//   db.collection("users").doc(user.uid).data().currentList.forEach((itemid) => {
+//     if(itemid == itemid) {
+//       document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;"; 
+//       document.getElementById("add-" + itemid).children[0].style.color = "#39A36A"; 
 //     }
-//   };
-
-
-
-// function dosearch() {
-//   console.log("search button clicked");
-//   var result = document.getElementById("search").value;
-//   // alert(result);
-//   window.location.href = "searchresults.html?value=" + result;
+//   })
 // }
+
+// checkifalreadyclicked()
