@@ -5,13 +5,11 @@
 //----------------------------------------------------------
 // if (firebase.auth().currentUser !== null) 
 //         console.log("user id: " + firebase.auth().currentUser.uid);
-// const currentUser = firebase.auth().currentUser.uid;
-​
+// const currentUser = firebase.auth().currentUser.uid;​
 function getBookmarks() {
   firebase.auth().onAuthStateChanged((user) => {
     // Check if a user is signed in:
     if (user) {
-​
       db.collection("users").doc(user.uid).get()
           .then(userDoc => {
               // Get the Array of bookmarks
@@ -29,7 +27,7 @@ function getBookmarks() {
                   const listName = item.listName;
                   const createdDate = item.createdDate;
                   const shoppingList = item.shoppinglist;
-​
+
                   let newcard = newcardTemplate.content.cloneNode(true);
                   let title = listName;
                     //update title and some pertinant information
@@ -45,33 +43,28 @@ function getBookmarks() {
   });
 }
 getBookmarks();
-​
-​
+
 function useList(historyListID) {
   firebase.auth().onAuthStateChanged((user) => {
     console.log(user.uid);
     // Check if a user is signed in:
     if (user) {
-​
       const currentUser = db.collection("users").doc(user.uid);
-​
       currentUser
         .get()
         .then((userDoc) => {
           const currentHistoryList = userDoc.data().historyList || {};
-​
           // Check if the historyListId exists
           if (currentHistoryList.hasOwnProperty(historyListID)) {
             // Access the properties of the specified history list
             const createdDate = currentHistoryList[historyListID].createdDate;
             const listName = currentHistoryList[historyListID].listName;
             const shoppingList = currentHistoryList[historyListID].shoppinglist;
-​
             // Use the properties as needed
             console.log("Created Date:", createdDate);
             console.log("List Name:", listName);
             console.log("Shopping List:", shoppingList);
-​
+
             shoppingList.forEach((productId) => {
               currentUser.update({
                 currentList: firebase.firestore.FieldValue.arrayUnion(productId),
@@ -81,8 +74,8 @@ function useList(historyListID) {
             console.log(`History list with ID ${historyListID} not found.`);
           }
         });
-​
-​
+
+
       db.collection("users").doc(user.uid).collection("historyList").doc(historyListID).get().then((doc) => {
         // doc doesn't exist for some reason
         if (doc.exists) {
@@ -116,7 +109,7 @@ function deleteList(historyListID) {
           const currentHistoryList = userDoc.data().historyList || {};
           if (currentHistoryList.hasOwnProperty(historyListID)) {
             delete currentHistoryList[historyListID];
-​
+
             // Update Firestore with the modified historyList
             return currentUser.update({
               historyList: currentHistoryList,
@@ -125,7 +118,7 @@ function deleteList(historyListID) {
             console.warn("Current list is empty or null");
           }
         });
-​
+
         
         txt = "You deleted " + historyListID;
       } else {
