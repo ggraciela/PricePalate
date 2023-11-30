@@ -102,7 +102,7 @@ function deleteList(historyListID) {
       db.collection("users").doc(user.uid).collection("historyList").get().then(doc => {
           console.log(user.uid);
       });
-      if (confirm("Press a button!")) {
+      if (confirm("Are you sure you want to delete this list?")) {
         //delete the collection corresponding to the id
         const currentUser = db.collection("users").doc(user.uid);
         currentUser.get().then((userDoc) => {
