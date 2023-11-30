@@ -88,7 +88,7 @@ function allmarket() {
     description: "Sweet and crunchy apples",
     price: 0.99,
     imgurl: "../images/products/applesw.png",
-    productFullName: "Apples",
+    productFullName: "Gala Apples",
     store: "walmart",
     walmart: true,
     costco: costcobox,
@@ -445,10 +445,10 @@ function allmarket() {
 
   costcoItems.doc("1a2b3c").set({
     id: "1a2b3c",
-    description: "Fresh and nutritious milk",
+    description: "1% Partly Skimmed Milk",
     price: 2.49,
-    imgurl: "../images/products/milk.jpg",
-    productFullName: "Milk",
+    imgurl: "../images/products/milkc.jpg",
+    productFullName: "Skimmed Milk",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -460,10 +460,10 @@ function allmarket() {
 
   costcoItems.doc("4e5f6g").set({
     id: "4e5f6g",
-    description: "Farm-fresh eggs",
+    description: "12 Free Run Large Eggs",
     price: 2.29,
-    imgurl: "../images/products/egg.jpg",
-    productFullName: "Eggs",
+    imgurl: "../images/products/eggc.jpg",
+    productFullName: "Free Run Eggs",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -475,10 +475,10 @@ function allmarket() {
 
   costcoItems.doc("7h8i9j").set({
     id: "7h8i9j",
-    description: "Whole grain bread",
+    description: "570g whole wheat bread",
     price: 3.99,
-    imgurl: "../images/products/bread.jpg",
-    productFullName: "Bread",
+    imgurl: "../images/products/breadc.jpg",
+    productFullName: "Whole Wheat Bread",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -490,10 +490,10 @@ function allmarket() {
 
   costcoItems.doc("k0l1m2").set({
     id: "k0l1m2",
-    description: "Long-grain white rice",
-    price: 5.49,
-    imgurl: "../images/products/rice.jpg",
-    productFullName: "Rice",
+    description: "Sitara Basmati Rice",
+    price: 11.49,
+    imgurl: "../images/products/ricec.jpg",
+    productFullName: "Basmati Rice",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -505,10 +505,10 @@ function allmarket() {
 
   costcoItems.doc("3n4o5p").set({
     id: "3n4o5p",
-    description: "Penne pasta made from durum wheat",
+    description: "Bronze die-cut pasta made in Italy",
     price: 1.99,
-    imgurl: "../images/products/pasta.jpg",
-    productFullName: "Pasta",
+    imgurl: "../images/products/pastac.jpg",
+    productFullName: "Rotini Pasta",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -520,10 +520,10 @@ function allmarket() {
 
   costcoItems.doc("6q7r8s").set({
     id: "6q7r8s",
-    description: "Sweet and crunchy apples",
+    description: "Wildly grown and juicy",
     price: 1.19,
     imgurl: "../images/products/applesc.jpg",
-    productFullName: "Apples",
+    productFullName: "Honeycrisp Apples",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -535,10 +535,10 @@ function allmarket() {
 
   costcoItems.doc("9t0u1v").set({
     id: "9t0u1v",
-    description: "Delicious and ripe bananas",
+    description: "sold in singles",
     price: 0.79,
-    imgurl: "../images/products/bananas.jpg",
-    productFullName: "Bananas",
+    imgurl: "../images/products/bananac.jpg",
+    productFullName: "Plantain Bananas",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -550,10 +550,10 @@ function allmarket() {
 
   costcoItems.doc("2w3x4y").set({
     id: "2w3x4y",
-    description: "Juicy and refreshing oranges",
+    description: "Clementine Mandarins",
     price: 1.59,
-    imgurl: "../images/products/oranges.jpg",
-    productFullName: "Oranges",
+    imgurl: "../images/products/orangesc.jpg",
+    productFullName: "Mandarin Oranges",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -565,10 +565,10 @@ function allmarket() {
 
   costcoItems.doc("5z6A7B").set({
     id: "5z6A7B",
-    description: "Crisp lettuce for salads",
+    description: "sold in singles",
     price: 1.29,
-    imgurl: "../images/products/lettuce.jpg",
-    productFullName: "Lettuce",
+    imgurl: "../images/products/lettucec.jpg",
+    productFullName: "Iceberg Lettuce",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -580,10 +580,10 @@ function allmarket() {
 
   costcoItems.doc("8C9d0E").set({
     id: "8C9d0E",
-    description: "Sweet and tangy tomatoes",
+    description: "Fresh market tomato 10oz",
     price: 0.89,
-    imgurl: "../images/products/tomatoes.jpg",
-    productFullName: "Tomatoes",
+    imgurl: "../images/products/tomatoesc.jpg",
+    productFullName: "Grape Tomatoes",
     store: "costco",
     walmart: walmartbox,
     costco: true,
@@ -591,246 +591,6 @@ function allmarket() {
     tnt: tntbox,
     storelogo: "../images/storelogoshort/costcologo.png",
     keywords: "tomato"
-  });
-
-  costcoItems.doc("1E2F3G").set({
-    id: "1E2F3G",
-    description: "Crunchy carrots",
-    price: 0.99,
-    imgurl: "../images/products/carrots.jpg",
-    productFullName: "Carrots",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "carrot"
-  });
-
-  costcoItems.doc("4G5H6I").set({
-    id: "4G5H6I",
-    description: "Fresh chicken breast",
-    price: 6.49,
-    imgurl: "../images/products/chickenbreast.jpg",
-    productFullName: "Chicken Breast",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "chicken"
-  });
-
-  costcoItems.doc("7H8I9J").set({
-    id: "7H8I9J",
-    description: "Lean ground beef",
-    price: 4.79,
-    imgurl: "../images/products/groundbeef.jpg",
-    productFullName: "Ground Beef",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "beef"
-  });
-
-  costcoItems.doc("0I1J2K").set({
-    id: "0I1J2K",
-    description: "Tender fish fillet",
-    price: 7.99,
-    imgurl: "../images/products/fish.jpg",
-    productFullName: "Fish Fillet",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "fish"
-  });
-
-  costcoItems.doc("3K4L5M").set({
-    id: "3K4L5M",
-    description: "Creamy butter",
-    price: 2.79,
-    imgurl: "../images/products/butter.jpg",
-    productFullName: "Butter",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "butter"
-  });
-
-  costcoItems.doc("6M7N8O").set({
-    id: "6M7N8O",
-    description: "Variety of cheese",
-    price: 3.19,
-    imgurl: "../images/products/cheese.jpg",
-    productFullName: "Cheese",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "cheese"
-  });
-
-  costcoItems.doc("9N0O1P").set({
-    id: "9N0O1P",
-    description: "Thick and creamy yogurt",
-    price: 1.39,
-    imgurl: "../images/products/yogurt.jpg",
-    productFullName: "Yogurt",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "yogurt"
-  });
-
-  costcoItems.doc("2O3P4Q").set({
-    id: "2O3P4Q",
-    description: "Healthy and crunchy cereal",
-    price: 4.29,
-    imgurl: "../images/products/cereal.jpg",
-    productFullName: "Cereal",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "cereal"
-  });
-
-  costcoItems.doc("5P6Q7R").set({
-    id: "5P6Q7R",
-    description: "Tasty canned beans",
-    price: 1.69,
-    imgurl: "../images/products/beans.jpg",
-    productFullName: "Canned Beans",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "beans"
-  });
-
-  costcoItems.doc("8R9S0T").set({
-    id: "8R9S0T",
-    description: "High-quality canned tomatoes",
-    price: 1.99,
-    imgurl: "../images/products/cannedtomatoes.jpg",
-    productFullName: "Canned Tomatoes",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "tomato"
-  });
-
-  costcoItems.doc("1S2T3U").set({
-    id: "1S2T3U",
-    description: "Variety of frozen vegetables",
-    price: 2.59,
-    imgurl: "../images/products/frozenvegetables.jpg",
-    productFullName: "Frozen Vegetables",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "vegetable"
-  });
-
-  costcoItems.doc("4U5V6W").set({
-    id: "4U5V6W",
-    description: "Delicious frozen pizza",
-    price: 5.99,
-    imgurl: "../images/products/frozenpizza.jpg",
-    productFullName: "Frozen Pizza",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "pizza"
-  });
-
-  costcoItems.doc("7W8X9Y").set({
-    id: "7W8X9Y",
-    description: "Creamy peanut butter",
-    price: 3.49,
-    imgurl: "../images/products/peanutbutter.jpg",
-    productFullName: "Peanut Butter",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "peanut butter"
-  });
-
-  costcoItems.doc("0X1Y2Z").set({
-    id: "0X1Y2Z",
-    description: "Sweet jam or jelly",
-    price: 2.29,
-    imgurl: "../images/products/jam.jpg",
-    productFullName: "Jam",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "jam"
-  });
-
-  costcoItems.doc("3Y4Z5A").set({
-    id: "3Y4Z5A",
-    description: "Crunchy snack chips",
-    price: 2.09,
-    imgurl: "../images/products/chips.jpg",
-    productFullName: "Snack Chips",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "chips"
-  });
-
-  costcoItems.doc("6Z7A8B").set({
-    id: "6Z7A8B",
-    description: "Rich and aromatic coffee",
-    price: 9.49,
-    imgurl: "../images/products/coffee.jpg",
-    productFullName: "Coffee",
-    store: "costco",
-    walmart: walmartbox,
-    costco: true,
-    saveonfoods: saveonfoodsbox,
-    tnt: tntbox,
-    storelogo: "../images/storelogoshort/costcologo.png",
-    keywords: "coffee"
   });
 
 
@@ -871,10 +631,10 @@ function allmarket() {
 
   tntItems.doc("yyyyyy").set({
     id: "yyyyyy",
-    description: "Sweet and crunchy apples",
+    description: "Juicy from BC",
     price: 1.55,
     imgurl: "../images/products/applest.png",
-    productFullName: "Apples",
+    productFullName: "Ambrosia Apples",
     store: "t&t",
     walmart: walmartbox,
     costco: costcobox,

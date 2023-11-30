@@ -66,6 +66,7 @@ html, body {
   border-style: solid;
   border-width: 1px;
   border-color: lightgrey;
+  border-radius: 5px;
 }
 #reminder {
   margin: 1em;
@@ -84,15 +85,27 @@ html, body {
   background-color: #39A36A;
   color: white;
   border-style: none;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 #remove {
-  padding-top: 1vh;
+  padding-top: 3px;
   text-align: center; 
   grid-area: delete;
+  padding-bottom: 15px;
 }
 #delete {
   width: 15vw;
-  border-style: none;
+  border-radius: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #39A36A;
+  background-color: white;
+  color: #39A36A;
+  font-weight: bold;
 }
 .card-container {
   padding-top: 12vh;
