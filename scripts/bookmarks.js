@@ -94,6 +94,8 @@ function useList(historyListID) {
     } else {
     }
   });
+  setTimeout(function(){window.location.href = "./shopping.html"}, 385);
+
 }
 function deleteList(historyListID) {
   
@@ -120,14 +122,12 @@ function deleteList(historyListID) {
             console.warn("Current list is empty or null");
           }
         });
-
-        
         txt = "You deleted " + historyListID;
       } else {
         txt = "You pressed Cancel!";
       }
     } else {
     }
-    location.reload();
   });
+  setTimeout(function(){location.reload()}, 1650)
 }
