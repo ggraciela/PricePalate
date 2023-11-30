@@ -133,7 +133,7 @@ function checkifalreadyclicked(){
     if(itemId == itemid) {
       document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;"; 
       document.getElementById("add-" + itemid).children[0].style.color = "#39A36A"; 
-    }
+    } 
   })
 }
 

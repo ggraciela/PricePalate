@@ -478,7 +478,7 @@ function allmarket() {
     description: "570g whole wheat bread",
     price: 3.99,
     imgurl: "../images/products/breadc.jpg",
-    productFullName: "Whole Wheat Bread",
+    productFullName: "Bread",
     store: "costco",
     walmart: walmartbox,
     costco: true,
