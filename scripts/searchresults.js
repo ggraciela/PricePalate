@@ -47,6 +47,8 @@ function displayCardsDynamically(collection) {
           newcard.getElementById("storelogo").src = storelogo;
           
           newcard.querySelector('button').id = 'add-' + itemid;  
+
+          // checkifalreadyclicked();
           newcard.querySelector('button').onclick = () => additemtolist(itemid); 
 
           // adding the new card
@@ -126,13 +128,12 @@ function additemtolist(itemid) {
 
 
 
-// function checkifalreadyclicked(){
-//   db.collection("users").doc(user.uid).data().currentList.forEach((itemid) => {
-//     if(itemid == itemid) {
-//       document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;"; 
-//       document.getElementById("add-" + itemid).children[0].style.color = "#39A36A"; 
-//     }
-//   })
-// }
+function checkifalreadyclicked(){
+  db.collection("users").doc(user.uid).data().currentList.forEach((itemId) => {
+    if(itemId == itemid) {
+      document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;"; 
+      document.getElementById("add-" + itemid).children[0].style.color = "#39A36A"; 
+    }
+  })
+}
 
-// checkifalreadyclicked()
