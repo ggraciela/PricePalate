@@ -212,10 +212,6 @@ function deleteMessage(itemId){
   messageDiv.addEventListener("click", handleUndo);
 }
 
-function notSuccessSave(){
-
-}
-
 
 function unsaveReminder(){
   firebase.auth().onAuthStateChanged((user) => {
