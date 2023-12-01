@@ -65,67 +65,25 @@ displayCardsDynamically("market");  //input param is the name of the collection
 
 function additemtolist(itemid) {
   firebase.auth().onAuthStateChanged((user) => {
-    // var itemid = doc.data().id;
     // Check if a user is signed in:
     if (user) {
       const currentUser = db.collection("users").doc(user.uid);
       currentUser.update({
         currentList: firebase.firestore.FieldValue.arrayUnion(itemid),
       })
-        // Handle the front-end update to change the icon, providing visual feedback to the user that it has been clicked.
         .then(function () {
-          console.log("product has been added into shoppinglist" + itemid);
+          // console.log("product has been added into shoppinglist" + itemid);
           var itemID = "item-" + itemid;
-          console.log(itemid);
+          // console.log(itemid);
 
-          //this is to change the icon of the hike that was saved to "filled"
-
-          // document.getElementById("add-" + itemid ).innerHTML = 'add_box'; 
-          // document.getElementById("add-" + itemid).children[0].innerHTML = 'add_box'; 
+          // turns the clicked add button to green and filled
           document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
           document.getElementById("add-" + itemid).children[0].style.color = "#39A36A";
-
-          // document.getElementById("add-" + itemid).style. = "#39A36A";
-          // document.getElementById("plusbtn").classList.add(""); 
-          // document.getElementById("plusbtn").innerHTML = "add_box"; 
-
-          // document.getElementById("add-" + itemid).style.setProperty('font-variation-settings', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
-          // document.getElementById("add-" + itemid).style.setProperty('--variation', `'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48`);
-
 
         });
     }
   });
 }
-
-
-
-// document.getElementById("plusbtn").target.classList.add("filled");
-
-// function changebutton() {
-//   let allBtns = document.querySelectorAll("plusbtn")
-
-// // For each button, register an event listener
-// allBtns.forEach(function(elem){
-
-//   elem.addEventListener("click", function(e){
-
-//     // On click, remove the MyClass on ALL buttons
-//     allBtns.forEach(function(el){
-//       el.classList.remove("filled");
-//     });
-
-//     // Add the class on clicked one
-//     e.target.classList.add("filled");
-
-//     // Now pass the data-href to your iframe
-//     // let theHREFtoOpen = e.target.getAttribute("data-href")
-//     // console.log(theHREFtoOpen)
-//     //document.querySelector("#your-iframe").src = theHREFtoOpen
-//   })
-// })
-// }
-
 
 
 function checkifalreadyclicked(itemid) {
