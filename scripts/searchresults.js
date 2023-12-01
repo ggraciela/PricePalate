@@ -46,10 +46,17 @@ function displayCardsDynamically(collection) {
           newcard.getElementById("productimage").src = imgurl;
           newcard.getElementById("storelogo").src = storelogo;
 
-          newcard.querySelector('button').id = 'add-' + itemid;
 
           checkifalreadyclicked(itemid);
-          newcard.querySelector('button').onclick = () => additemtolist(itemid);
+
+          newcard.querySelector('.addbutton').onclick = () => additemtolist(itemid);
+          newcard.querySelector('.minusbutton').onclick = () => removeitemfromlist(itemid);
+          newcard.querySelector('.minus').style.color = "transparent";
+          
+          newcard.querySelector('.addbutton').id = 'add-' + itemid;
+          newcard.getElementById('minusbtn').id = 'minus-' + itemid;
+
+          // document.getElementById("minusbtn").classList.add("invisible"); 
 
           // adding the new card
           document.getElementById('allresults').appendChild(newcard);
@@ -80,11 +87,33 @@ function additemtolist(itemid) {
           document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
           document.getElementById("add-" + itemid).children[0].style.color = "#39A36A";
 
+          // document.getElementById("minus-" + itemid).style.visibility = "visible";
+          document.getElementById("minus-" + itemid).style.color = "#39A36A";
+          // showminusbutton(itemid);
         });
     }
   });
 }
 
+function showminusbutton(itemid){
+  firebase.auth().onAuthStateChanged((user) => {
+    // Check if a user is signed in:
+    if (user) {
+      const currentUser = db.collection("users").doc(user.uid);
+
+      currentUser.get().then((userDoc) => {
+        const currentList = userDoc.data().currentList;
+
+        currentList.forEach((itemId) => {
+          if (itemId == itemid) {
+            document.getElementById("minus-" + itemid).style.visibility = "visible";
+            document.getElementById("minus-" + itemid).style.color = "#39A36A";
+          } 
+        })
+      })
+    }
+  })
+}
 
 function checkifalreadyclicked(itemid) {
   firebase.auth().onAuthStateChanged((user) => {
@@ -99,9 +128,82 @@ function checkifalreadyclicked(itemid) {
           if (itemId == itemid) {
             document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
             document.getElementById("add-" + itemid).children[0].style.color = "#39A36A";
-          } 
+
+            document.getElementById("minus-" + itemid).style.color = "#39A36A";
+          } else {
+            document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
+            document.getElementById("add-" + itemid).children[0].style.color = "#6e6e6e";
+
+            document.getElementById("minus-" + itemid).style.color = "transparent";
+          }
         })
       })
     }
   })
+}
+
+
+function resetbuttons(itemid){
+  firebase.auth().onAuthStateChanged((user) => {
+    // Check if a user is signed in:
+    if (user) {
+      const currentUser = db.collection("users").doc(user.uid);
+
+      currentUser.get().then((userDoc) => {
+        const currentList = userDoc.data().currentList;
+
+        currentList.forEach((itemId) => {
+          if (itemId == itemid) {
+            document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
+            document.getElementById("add-" + itemid).children[0].style.color = "#39A36A";
+
+            document.getElementById("minus-" + itemid).style.color = "#39A36A";
+            console.log("reset button if");
+          } else {
+            document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 0, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
+            document.getElementById("add-" + itemid).children[0].style.color = "#6e6e6e";
+
+            document.getElementById("minus-" + itemid).style.color = "transparent";
+            console.log("reset button else");
+          }
+        })
+      })
+    }
+  })
+}
+
+function removeitemfromlist(itemId) {
+  redirectAfterSave = true;
+  firebase.auth().onAuthStateChanged((user) => {
+    // Check if a user is signed in:
+    if (user) {
+      const currentUser = db.collection("users").doc(user.uid);
+
+      currentUser.get().then((userDoc) => {
+        const currentList = userDoc.data().currentList;
+        if (currentList && currentList.length > 0) {
+          currentUser
+            .update({
+              // Use 'arrayUnion' to add the new bookmark ID to the 'bookmarks' array.
+              // This method ensures that the ID is added only if it's not already present, preventing duplicates.
+              currentList: firebase.firestore.FieldValue.arrayRemove(itemId),
+              
+            })
+            // Handle the front-end update to change the icon, providing visual feedback to the user that it has been clicked.
+            .then(() => {
+              console.log("item has been deleted for" + itemId);
+
+              resetbuttons(itemId);
+              // checkifalreadyclicked(itemid);
+              // displayCardsDynamically("market");
+              // window.location.href = "shopping.html";
+
+            });
+        } else {
+          console.warn("Current list is empty or null");
+        }
+      });
+    } else {
+    }
+  });
 }

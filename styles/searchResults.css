@@ -239,6 +239,20 @@ body {
   font-size: 17px;
 }
 
+#searchpage{
+  color: #39A36A;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#searchtext {
+  font-weight: bolder;
+  color: #39A36A;
+}
+
 button {
   cursor: pointer;
 }
@@ -253,6 +267,26 @@ button {
   color: #39A36A;
   background-color: #39A36A;
 }
+
+.minusbutton {
+  border-width: 0px;
+  background-color: transparent;
+  color: transparent;
+}
+
+.minus {
+  color: transparent;
+}
+
+.minus:active {
+  font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;
+}
+
+/* .invisible {
+  color: transparent;
+  background-color: transparent;
+  border-width: 0px;
+} */
 
 .bookmark .material-symbols-outlined {
   font-size: 45px;

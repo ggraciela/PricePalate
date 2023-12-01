@@ -10,6 +10,19 @@ body, html {
 }
 
 
+#shoppinglistpage{
+  color: #39A36A;
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#shoppinglisttext {
+  font-weight:bolder;
+  color: #39A36A;
+}
 
 .centerempty {
   margin-top: 75px;
