@@ -206,7 +206,7 @@ function removeitemfromlist(itemId) {
               // window.location.href = "searchresults.html?value=" + result;
 
               var keyword = (localStorage.getItem("keywordsearch"));
-              window.location.href = "searchresults.html?value=" + keyword;
+              window.location.href = "searchResults.html?value=" + keyword;
             });
         } else {
           console.warn("Current list is empty or null");
