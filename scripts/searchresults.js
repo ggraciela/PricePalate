@@ -4,7 +4,8 @@ function displayCardsDynamically(collection) {
 
   // to match search result with the keyword
   let params = new URL(window.location.href); // Get the URL from the search bar
-  let keyword = params.searchParams.get("value");
+  let keyword = params.searchParams.get("value").toLowerCase();
+  // console.log(keyword);
 
   // to get value of checkboxes
   var walmartbox = (localStorage.getItem("walmartstat") === 'true');
@@ -125,6 +126,7 @@ function checkifalreadyclicked(itemid) {
         const currentList = userDoc.data().currentList;
 
         currentList.forEach((itemId) => {
+          
           if (itemId == itemid) {
             document.getElementById("add-" + itemid).children[0].style = "font-variation-settings: 'FILL' 1, 'wght' 700, 'GRAD' 0, 'opsz' 48;";
             document.getElementById("add-" + itemid).children[0].style.color = "#39A36A";
@@ -196,8 +198,15 @@ function removeitemfromlist(itemId) {
               resetbuttons(itemId);
               // checkifalreadyclicked(itemid);
               // displayCardsDynamically("market");
-              // window.location.href = "shopping.html";
+              
 
+              
+              // let params = new URL(window.location.href); // Get the URL from the search bar
+              // let keyword = params.searchParams.get("value");
+              // window.location.href = "searchresults.html?value=" + result;
+
+              var keyword = (localStorage.getItem("keywordsearch"));
+              window.location.href = "searchresults.html?value=" + keyword;
             });
         } else {
           console.warn("Current list is empty or null");

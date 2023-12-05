@@ -49,15 +49,15 @@ function print4() {
 
 }
 
-function dosearch() {
-  allmarket();
-  console.log("search button clicked");
-  var result = document.getElementById("search").value;
-  // alert(allResults);
+// function dosearch() {
+//   allmarket();
+//   console.log("search button clicked");
+//   var result = document.getElementById("search").value;
+//   // alert(allResults);
 
-  // displayCardsDynamically("market");
-    window.location.href = "searchresults.html?value=" + result;
-}
+//   // displayCardsDynamically("market");
+//     window.location.href = "searchresults.html?value=" + result;
+// }
 
 function enterSearch(e) {
   console.log(e.keyCode);

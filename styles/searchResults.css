@@ -272,6 +272,7 @@ button {
   border-width: 0px;
   background-color: transparent;
   color: transparent;
+  align-self: flex-end;
 }
 
 .minus {
