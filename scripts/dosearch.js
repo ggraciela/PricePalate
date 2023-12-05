@@ -10,7 +10,7 @@ function dosearch() {
   // alert(allResults);
 
   // displayCardsDynamically("market");
-  window.location.href = "searchresults.html?value=" + result;
+  window.location.href = "searchResults.html?value=" + result;
 
 
     firebase.auth().onAuthStateChanged((user) => {
