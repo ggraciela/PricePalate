@@ -9,14 +9,25 @@ footer {
   border-width: 0;
 }
 
+#searchpagebtn::after {
+  background-color: transparent;
+  border-width: 0;
+}
+
+#searchpagebtn:active {
+  background-color: transparent;
+  border-width: 0;
+}
+
+
 #searchtext {
-  color: #8F8F8F;
+  /* color: #8F8F8F; */
   font-size: 17px;
   font-family: quicksand;
   /* font-weight: bold; */
 }
 
 #searchpage {
-  color: #8F8F8F;
+  /* color: #8F8F8F; */
   padding-bottom: 3px;
 }

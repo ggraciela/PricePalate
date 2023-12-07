@@ -213,6 +213,10 @@ body {
   /* color: ; */
 }
 
+#searchpage {
+  color: #39A36A;
+}
+
 #footer {
   display: flex;
   justify-content: space-around;
