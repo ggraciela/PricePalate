@@ -94,7 +94,7 @@ function useList(historyListID) {
     } else {
     }
   });
-  setTimeout(function(){window.location.href = "./shopping.html"}, 500);
+  setTimeout(function(){window.location.href = "../shopping.html"}, 700);
 
 }
 function deleteList(historyListID) {
@@ -129,5 +129,5 @@ function deleteList(historyListID) {
     } else {
     }
   });
-  setTimeout(function(){location.reload()}, 2200)
+  setTimeout(function(){window.location.href="../bookmarks.html"}, 2500)
 }
