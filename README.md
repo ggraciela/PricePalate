@@ -13,6 +13,8 @@ a grocery planning app prototype where users can compare prices across multiple 
 * To view the hosted site, simply click on this link : https://pricepalatebby31.web.app
 * Sign up with email is required
 
+* Link to wireframe / wireflow / prototype in Figma : 
+
 ## 4. Known Bugs and Limitations
 Here are some known bugs:
 * Data is a mock up, have yet to access the supermarket's API
