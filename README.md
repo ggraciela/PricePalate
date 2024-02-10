@@ -1,63 +1,20 @@
-# Project Title
+# Price Palate
 
 ## 1. Project Description
-State your app in a nutshell, or one-sentence pitch. Give some elaboration on what the core features are.  
-This browser based web application to ... 
+a grocery planning app prototype where users can compare prices across multiple supermarkets within just a few clicks (goodbye countless tabs!), and save the items into their shopping list. 
 
-## 2. Names of Contributors
-List team members and/or short bio's here... 
+## 2. Names of Contributors & Technologies Used
 
-* Hi, my name is Victor! I like keyboard noises.
-* Hi, my name is Daisy/I am excited to work on our project
-* Hi, my name is Graciela. This is my first time trying github for a group project
+* Graciela	: UI/UX design with Figma, homepage & search result page with HTML/CSS/Javascript
+* Daisy 		: Shopping list page with HTML/CSS/Javascript, mock up database with JSON and Firestore
+* Victor 		: Saved list page with HTML/CSS/Javascript, implementing user login with Firebase
 
-	
-## 3. Technologies and Resources Used
-List technologies (with version numbers), API's, icons, fonts, images, media or data sources, and other resources that were used.
-* HTML, CSS, JavaScript
-* Bootstrap 5.0 (Frontend library)
-* Firebase 8.0 (BAAS - Backend as a Service)
-* ...
+## 3. Complete setup/installion/usage
+* To view the hosted site, simply click on this link : https://pricepalatebby31.web.app
+* Sign up with email is required
 
-## 4. Complete setup/installion/usage
-State what a user needs to do when they come to your project.  How do others start using your code or application?
-Here are the steps ...
-* ...
-* ...
-* ...
-
-## 5. Known Bugs and Limitations
+## 4. Known Bugs and Limitations
 Here are some known bugs:
-* ...
-* ...
-* ...
-
-## 6. Features for Future
-What we'd like to build in the future:
-* ...
-* ...
-* ...
+* Data is a mock up, have yet to access the supermarket's API
 	
-## 7. Contents of Folder
-Content of the project folder:
-
-```
- Top level of project folder: 
-├── .gitignore               # Git ignore file
-├── index.html               # landing HTML file, this is what users see when you come to url
-└── README.md
-
-It has the following subfolders and files:
-├── .git                     # Folder for git repo
-├── images                   # Folder for images
-    /blah.jpg                # Acknowledge source
-├── scripts                  # Folder for scripts
-    /blah.js                 # 
-├── styles                   # Folder for styles
-    /blah.css                # 
-
-
-
-```
-
-
+## 5. Screenshots 
