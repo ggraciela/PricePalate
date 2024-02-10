@@ -17,6 +17,6 @@ a grocery planning app prototype where users can compare prices across multiple 
 
 ## 4. Known Bugs and Limitations
 Here are some known bugs:
-* Data is a mock up, have yet to access the supermarket's API
+* Data is a mock up, have yet to access the supermarkets' API
 	
 ## 5. Screenshots 
