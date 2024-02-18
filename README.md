@@ -1,7 +1,7 @@
 # Price Palate
 
 ## 1. Project Description
-a grocery planning app prototype where users can compare prices across multiple supermarkets within just a few clicks (goodbye countless tabs!), and save the items into their shopping list. 
+A grocery planning app prototype where users can compare prices across multiple supermarkets within just a few clicks (goodbye countless tabs!), and save the items into their shopping list. 
 
 ## 2. Names of Contributors & Technologies Used
 
@@ -9,7 +9,7 @@ a grocery planning app prototype where users can compare prices across multiple 
 * Daisy 		: Shopping list page with HTML/CSS/Javascript, mock up database with JSON and Firestore
 * Victor 		: Saved list page with HTML/CSS/Javascript, implementing user login with Firebase
 
-## 3. Complete setup/installion/usage
+## 3. Complete setup/usage
 * To view the hosted site, simply click on this link : https://pricepalatebby31.web.app
 * Sign up with email is required
 
