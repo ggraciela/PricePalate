@@ -21,11 +21,23 @@ Here are some known bugs:
 	
 ## 5. Screenshots 
 
-#### Survey 
+#### User Story & Persona :
 
-#### User Story & Persona
+#### Red Routes :
 
-#### 
 
-#### Our Wireframes & Wireflows
+#### Some of our survey questions & results :
+![image](https://github.com/ggraciela/PricePalate/assets/94437215/2c9ea65a-5195-40e8-b74e-8ccbdbba3e48)
+![image](https://github.com/ggraciela/PricePalate/assets/94437215/dfe40497-6c49-4577-aac5-ae6b37ea6e9a)
+![image](https://github.com/ggraciela/PricePalate/assets/94437215/a2b3ff5d-dee3-4425-84a3-e6ffb1c513db)
+
+
+#### Our Wireframes & Wireflows :
+(check out our Figma to view more in details)
+https://www.figma.com/file/rhzV5dygI901A8NpjtsQgV/PricePalate-Clickable-Wireframes?type=design&node-id=25%3A359&mode=design&t=cJNAU8c1svgHCg3o-1
 ![Screenshot 2024-02-19 141343](https://github.com/ggraciela/PricePalate/assets/94437215/2ba3ea26-44d2-4619-9190-6e8ca6998bcf)
+
+#### Screenshot of our mock-up data : 
+
+
+### Screenshot of the final result 
