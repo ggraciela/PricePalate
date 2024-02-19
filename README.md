@@ -9,6 +9,10 @@ A grocery planning app prototype where users can compare prices across multiple 
 * Daisy 		: Shopping list page with HTML/CSS/Javascript, mock up database with JSON and Firestore
 * Victor 		: Saved list page with HTML/CSS/Javascript, implementing user login with Firebase
 
+* All languages & technologies used:
+	* HTML/CSS/Javascript
+ *  
+
 ## 3. Complete setup/usage
 * To view the hosted site, simply click on this link : https://pricepalatebby31.web.app
 * Sign up with email is required
