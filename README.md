@@ -1,4 +1,4 @@
-# Price Palate
+# PricePalate
 
 ## 1. Project Description
 A grocery planning app prototype where users can compare prices across multiple supermarkets within just a few clicks (goodbye countless tabs!), and save the items into their shopping list. 
