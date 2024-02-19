@@ -48,11 +48,7 @@ https://www.figma.com/file/rhzV5dygI901A8NpjtsQgV/PricePalate-Clickable-Wirefram
 
 
 ### Screenshot of the final product :
-<img src="(https://github.com/ggraciela/PricePalate/assets/94437215/ccd6947e-e9c8-4a69-b0d4-8315c74cb6f2" width="100">
-<img src="https://your-image-url.type" width="100" height="100">
-<img src="https://your-image-url.type" width="100" height="100">
-<img src="https://your-image-url.type" width="100" height="100">
-<img src="https://your-image-url.type" width="100" height="100">
-<img src="https://your-image-url.type" width="100" height="100">
+<img src="(https://github.com/ggraciela/PricePalate/assets/94437215/ccd6947e-e9c8-4a69-b0d4-8315c74cb6f2" width="100" height="auto">
+
 
 
