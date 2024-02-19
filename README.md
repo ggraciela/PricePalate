@@ -5,13 +5,11 @@ A grocery planning app prototype where users can compare prices across multiple 
 
 ## 2. Names of Contributors & Technologies Used
 
-* Graciela	: UI/UX design with Figma, homepage & search result page with HTML/CSS/Javascript
+* Graciela	: UI/UX design with Figma, homepage & search result page with HTML/CSS/Javascript, mock up database JSON & Firestore
 * Daisy 		: Shopping list page with HTML/CSS/Javascript, mock up database with JSON and Firestore
-* Victor 		: Saved list page with HTML/CSS/Javascript, implementing user login with Firebase
+* Victor 		: Saved list page with HTML/CSS/Javascript, implementing user login with built-in Firebase auth
 
-* All languages & technologies used:
-	* HTML/CSS/Javascript
- *  
+* We deployed our website with Firebase
 
 ## 3. Complete setup/usage
 * To view the hosted site, simply click on this link : https://pricepalatebby31.web.app
