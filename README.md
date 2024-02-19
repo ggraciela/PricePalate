@@ -20,3 +20,12 @@ Here are some known bugs:
 * Data is a mock up, have yet to access the supermarkets' API
 	
 ## 5. Screenshots 
+
+#### Survey 
+
+#### User Story & Persona
+
+#### 
+
+#### Our Wireframes & Wireflows
+![Screenshot 2024-02-19 141343](https://github.com/ggraciela/PricePalate/assets/94437215/2ba3ea26-44d2-4619-9190-6e8ca6998bcf)
