@@ -47,6 +47,6 @@ https://www.figma.com/file/rhzV5dygI901A8NpjtsQgV/PricePalate-Clickable-Wirefram
 ![Screenshot 2024-02-19 151447](https://github.com/ggraciela/PricePalate/assets/94437215/2eb8afab-4319-48ac-b96c-59f22d14f845)
 
 
-### Screenshot of the final result :
-
+### Screenshot of the final product :
+![pricepalatebby31 web app_index html](https://github.com/ggraciela/PricePalate/assets/94437215/ccd6947e-e9c8-4a69-b0d4-8315c74cb6f2 | width=100)
 
